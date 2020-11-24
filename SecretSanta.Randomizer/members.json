@@ -1,0 +1,434 @@
+{
+	"Members": [
+		{
+			"Id": 1,
+			"Name": "Mike",
+			"Ineligible": [
+				2,
+				6,
+				7
+			],
+			"Email": "me@mikeslevine.com",
+			"PantSize": "32W x 32L",
+			"ShirtSize": "Medium",
+			"ShoeSize": "10.5",
+			"FavoriteThings": [
+				{
+					"Name": "Under Armour Sweatpants",
+					"Description": "Medium / Blue ",
+					"Url": "https://www.underarmour.com/en-us/p/bottoms/mens-ua-hustle-fleece-joggers/1317455.html"
+				},
+				{
+					"Name": "Express long sleeve waffle tee",
+					"Description": "Size small, heather grey",
+					"Url": "https://www.express.com/clothing/men/solid-waffle-knit-long-sleeve-t-shirt/pro/05738456/color/Light%20Heather%20Gray/e/regular/"
+				},
+				{
+					"Name": "Express long sleeve waffle tee",
+					"Description": "Size small, Navy",
+					"Url": "https://www.express.com/clothing/men/solid-waffle-knit-long-sleeve-t-shirt/pro/05738456/color/NAVY/e/regular/"
+				},
+				{
+					"Name": "Craftsman Verastack",
+					"Description": "17-in 2-Drawer Red Plastic Tool Box",
+					"Url": "https://www.lowes.com/pd/CRAFTSMAN-VERSASTACK-System-17-in-2-Drawer-Red-Plastic-Tool-Box/1000578405"
+				}
+			],
+			"SpouseSuggestion": [
+				{
+					"Name": "Family Monogram wall art",
+					"Description": "Black, size 22 inches, \"L est 2015\"",
+					"Url": "https://www.etsy.com/listing/812035800/farmhouse-circle-family-monogram-sign?ref=hp_rf-1&frs=1&variation0=1418645344&variation1=1436941599"
+				},
+				{
+					"Name": "Home Depot gift card",
+					"Description": null,
+					"Url": null
+				}
+			],
+			"DoNotBuy": [
+
+			]
+		},
+		{
+			"Id": 2,
+			"Name": "Corri",
+			"Ineligible": [
+				1,
+				3,
+				6
+			],
+			"Email": "corri.skinner@gmail.com",
+			"PantSize": "4",
+			"ShirtSize": "XS",
+			"ShoeSize": "6",
+			"FavoriteThings": [
+				{
+					"Name": "Ugg Coquette slippers ",
+					"Description": "Quartz snow leopard suede, size 6",
+					"Url": "https://www.nordstrom.com/s/ugg-genuine-shearling-slipper-women/2836854?siteid=QFGLnEolOWg-BAB6b.7e4zzk.xCnk4fJKw&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_channel=low_nd_affiliates&utm_term=747642&utm_content=1_https://rstyle.me/+C4AZArFde-SpfiUR7eeBfw?li=43c774d9-1d81-11eb-b6e2-0242ac110003&lpm=EXACT&__cid=1907&fcn=ios%20ltk%20share&fcs=ios%20consumer%20app&l=en_US&lcn=Higher%20touch&lcs=Mobile%20Web%20-%20Journey&nai=false&p=single-ltk&phv=false&pi=4be83d1c-ff30-11e5-96ef-22000b0f8f3a&r=deeplink&rr=deeplink&u=5b92efea4cd54f5b96ff33ac39569299&v=2.77.0.9007&sp_source=rakuten&sp_campaign=QFGLnEolOWg"
+				},
+				{
+					"Name": "Calvin Klein Roll Top Socks",
+					"Description": null,
+					"Url": "https://www.bloomingdales.com/shop/product/calvin-klein-roll-top-combed-cotton-socks-set-of-3?ID=1112112&CategoryID=2910"
+				},
+				{
+					"Name": "Justin Bieber Purpose Deluxe Vinyl",
+					"Description": null,
+					"Url": "https://www.walmart.com/ip/Purpose-Vinyl-Limited-Edition/132789674?wmlspartner=wlpa&selectedSellerId=0&&adid=22222222227000000000&wl0=&wl1=g&wl2=c&wl3=42423897272&wl4=pla-51320962143&wl5=9003476&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=132789674&veh=sem&gclid=CjwKCAiAtej9BRAvEiwA0UAWXu0_DWJAjxAgtulKRd9OFuLuE2bBrzvCvLlb1GL0KGBha0tkGK2cDxoCmdgQAvD_BwE"
+				},
+				{
+					"Name": "Amy Winehouse - Back To Black Vinyl",
+					"Description": null,
+					"Url": "https://www.urbanoutfitters.com/shop/amy-winehouse---back-to-black-lp-001?color=001&size=ONE%20SIZE&type=REGULAR&quantity=1"
+				},
+				{
+					"Name": "Kanye West - The College Dropout Vinyl",
+					"Description": null,
+					"Url": "https://www.urbanoutfitters.com/shop/kanye-west---the-college-dropout-2xlp?color=002&size=ONE%20SIZE&type=REGULAR&quantity=1"
+				},
+				{
+					"Name": "N.E.R.D. - Nothing Vinyl",
+					"Description": null,
+					"Url": "https://www.urbanoutfitters.com/shop/nerd-nothing-2xlp?color=001&size=ONE%20SIZE&type=REGULAR&quantity=1"
+				}
+			],
+			"SpouseSuggestion": [
+				{
+					"Name": "Lush bubble bar",
+					"Description": "Milky Bath",
+					"Url": "https://www.lushusa.com/bath/bubble-bars/milky-bath/9999901857.html"
+				},
+				{
+					"Name": "New Harry Potter color change mug",
+					"Description": null,
+					"Url": null
+				}
+			],
+			"DoNotBuy": [ "Hat, scarf, gloves" ]
+		},
+		{
+			"Id": 3,
+			"Name": "Vicki",
+			"Ineligible": [
+				4,
+				5,
+				1
+			],
+			"Email": "vskinner715@gmail.com",
+			"PantSize": "ladies 12",
+			"ShirtSize": "ladies large",
+			"ShoeSize": "5.5",
+			"FavoriteThings": [
+				{
+					"Name": "Women's Apt. 9® Tummy Control Pull-on Ponte Leggings",
+					"Description": "L, Black",
+					"Url": "https://www.kohls.com/product/prd-3708141/womens-apt-9-tummy-control-pull-on-ponte-leggings.jsp?skuid=74891585&CID=shopping15&utm_campaign=APT%209%20BOTTOMS&utm_medium=CSE&utm_source=google&utm_product=74891585&utm_campaignid=9733267375&gclid=Cj0KCQiAqdP9BRDVARIsAGSZ8AkFU-3jVMd-5nXI-C7KGMGtpfIxS-n1dVPYgAFoS8_i_Cd-JNhvp4saApFEEALw_wcB&gclsrc=aw.ds"
+				},
+				{
+					"Name": "CHAPS Jeans Women's High Rise Skinny Full Length Jean",
+					"Description": "12/31 blue",
+					"Url": "https://www.amazon.com/CHAPS-Jeans-Womens-Skinny-Length/dp/B084Q947HC/ref=sr_1_5?dchild=1&keywords=chaps%2Bhigh%2Brise%2Bskinny%2Bjeans%2Bfor%2Bwomen&qid=1605739211&sr=8-5&th=1&psc=1"
+				},
+				{
+					"Name": " a.n.a. Womens Jegging",
+					"Description": "Black 14",
+					"Url": "https://www.jcpenney.com/p/ana-womens-jegging/ppr5008005918?pTmplType=regular&deptId=dept20000013&catId=cat100250096&rrplacementtype=pdp1_jrecs&criteriaName=E0_Seq_VB%20v1"
+				},
+				{
+					"Name": "gift card for Boscov's or Amazon",
+					"Description": null,
+					"Url": null
+				},
+				{
+					"Name": "Bluetooth speaker for outside at hot tub",
+					"Description": null,
+					"Url": null
+				}
+			],
+			"SpouseSuggestion": [
+
+			],
+			"DoNotBuy": [
+
+			]
+		},
+		{
+			"Id": 4,
+			"Name": "Larry",
+			"Email": "skindc@pa.metrocast.net",
+			"Ineligible": [
+				3,
+				7,
+				8
+			],
+			"PantSize": "32 waist, 30inseam",
+			"ShirtSize": "large",
+			"ShoeSize": "7.5 EEEE",
+			"FavoriteThings": [
+				{
+					"Name": "jncair 1700 or jnc 660",
+					"Description": null,
+					"Url": "jump and carry"
+				}
+			],
+			"SpouseSuggestion": [
+				{
+					"Name": "Gift card for Rockler.com or Duluth Trading",
+					"Description": null,
+					"Url": null
+				}
+			],
+			"DoNotBuy": [
+
+			]
+		},
+		{
+			"Id": 5,
+			"Name": "Cassie",
+			"Ineligible": [
+				6,
+				2,
+				4
+			],
+			"Email": "cassie11r@hotmail.com",
+			"PantSize": "8, M",
+			"ShirtSize": "Fitted M, baggy L",
+			"ShoeSize": "6",
+			"FavoriteThings": [
+				{
+					"Name": "Desk stepper ",
+					"Description": null,
+					"Url": "https://smile.amazon.com/dp/B0016BQFSS/?coliid=I2E8IJGD6QXWMK&colid=23Q4HC5KD52P0&psc=1&ref_=lv_ov_lig_dp_it"
+				},
+				{
+					"Name": "Wood wobble balance board",
+					"Description": null,
+					"Url": "https://smile.amazon.com/dp/B07DWKNXNY/?coliid=I2LOLTDLK2HCFN&colid=23Q4HC5KD52P0&psc=1&ref_=lv_ov_lig_dp_it"
+				},
+				{
+					"Name": "Moonstone ring",
+					"Description": "4-5",
+					"Url": "https://www.sundancecatalog.com/product/radiant+moonstone+ring.do?sortby=ourPicks&refType=&from=Search"
+				},
+				{
+					"Name": "Pusheen knit kit",
+					"Description": null,
+					"Url": "https://www.stitchandstory.com/collections/pusheen/products/pusheen-sitting-pusheen-knitting-kit"
+				},
+				{
+					"Name": "Cocktail muddler set",
+					"Description": null,
+					"Url": "https://smile.amazon.com/Hiware-Stainless-Cocktail-Muddler-Mixing/dp/B018S6SRWA/ref=mp_s_a_1_3?dchild=1&keywords=muddler&qid=1605917669&sr=8-3"
+				},
+				{
+					"Name": "Money for books",
+					"Description": null,
+					"Url": "Amazon"
+				},
+				{
+					"Name": "Salomon sneakers",
+					"Description": "6",
+					"Url": "https://www.salomon.com/en-us/shop/product/x-alpine-w-pro.html#color=17918"
+				}
+			],
+			"SpouseSuggestion": [
+				{
+					"Name": "Stuff women like that they don’t buy for themselves ",
+					"Description": null,
+					"Url": null
+				}
+			],
+			"DoNotBuy": [
+
+			]
+		},
+		{
+			"Id": 6,
+			"Name": "Fritz",
+			"Ineligible": [
+				5,
+				8,
+				3
+			],
+			"Email": "fritz.mavencamp@nutrien.com",
+			"PantSize": "34x36",
+			"ShirtSize": "L",
+			"ShoeSize": "11",
+			"FavoriteThings": [
+				{
+					"Name": "End wrenches",
+					"Description": null,
+					"Url": "https://www.homedepot.com/p/Husky-SAE-mm-Combination-Wrench-Set-50-Piece-HCW50PCSM/313097242"
+				},
+				{
+					"Name": "More end wrenches",
+					"Description": null,
+					"Url": "https://www.homedepot.com/p/Husky-SAE-MM-Ratcheting-Wrench-Set-with-Stubby-30-Piece-H30PCRWPOUCH/305011099"
+				},
+				{
+					"Name": "Giant Loop MoJavi™ Saddlebag",
+					"Description": "Orange or black ",
+					"Url": "https://slavensracing.com/shop/mojavi-saddlebag-by-giant-loop/"
+				}
+			],
+			"SpouseSuggestion": [
+				{
+					"Name": "Sonicare toothbrush ",
+					"Description": null,
+					"Url": null
+				}
+			],
+			"DoNotBuy": [
+
+			]
+		},
+		{
+			"Id": 7,
+			"Name": "Sara",
+			"Ineligible": [
+				8,
+				4,
+				5
+			],
+			"Email": "sara.skinner7@gmail.com",
+			"PantSize": "27",
+			"ShirtSize": "Medium",
+			"ShoeSize": "7",
+			"FavoriteThings": [
+				{
+					"Name": "Keen Mary Janes",
+					"Description": "7/Black/Gray",
+					"Url": "https://www.keenfootwear.com/p/W-SIENNA-MJ-CANVAS.html"
+				},
+				{
+					"Name": "Levi's Jeans",
+					"Description": "Indigo Daze Dark Wash/",
+					"Url": "https://www.levi.com/US/en_US/clothing/women/jeans/720-high-rise-super-skinny-womens-jeans/p/527970024"
+				},
+				{
+					"Name": "Jeans",
+					"Description": "Blue Story/Black",
+					"Url": "https://www.levi.com/US/en_US/clothing/women/jeans/721-high-rise-skinny-womens-jeans/p/188820047"
+				},
+				{
+					"Name": "Kitchen Faucet",
+					"Description": "And installation? Daddy? Fritz?",
+					"Url": "https://www.lowes.com/pd/Delta-Kessler-Chrome-1-handle-Deck-Mount-Pull-out-Kitchen-Faucet/3959713"
+				},
+				{
+					"Name": "Bathroom Sink",
+					"Description": "Mocha",
+					"Url": "https://www.lowes.com/pd/Project-Source-24-5-in-Java-Single-Sink-Bathroom-Vanity-with-White-Cultured-Marble-Top/1000423155"
+				},
+				{
+					"Name": "Roxy Dress",
+					"Description": "Small",
+					"Url": "https://www.roxy.com/honey-lips-long-rib-knit-dress-194476194810.html#cgid=clothing&start=37&hitcount=921"
+				},
+				{
+					"Name": "Ten Tree Sweats",
+					"Description": "medium",
+					"Url": "https://www.tentree.com/collections/womens?page=12"
+				},
+				{
+					"Name": "Men's sweatpants with pockets and tie",
+					"Description": "Medium/Comfy",
+					"Url": null
+				},
+				{
+					"Name": "Fingerless Bike Gloves",
+					"Description": "Green/Teal/Purple",
+					"Url": "https://www.rei.com/product/170668/bontrager-solstice-cycling-gloves-womens?color=GREEN"
+				},
+				{
+					"Name": "Ten Tree Hoodie",
+					"Description": "Medium Red Mahogony",
+					"Url": "https://www.tentree.com/collections/womens-hoodies?page=3"
+				},
+				{
+					"Name": "Ten Tree Hoodie",
+					"Description": "Medium/Deep Teal heather",
+					"Url": "https://www.tentree.com/collections/womens-hoodies/products/w-juniper-hoodie?METEORITE%20BLACK%20HEATHER"
+				}
+			],
+			"SpouseSuggestion": [
+				{
+					"Name": "Nemo Helio pressure shower",
+					"Description": "They make a 22L. We'd only need the 11L.",
+					"Url": "https://www.rei.com/product/163887/nemo-helio-pressure-shower-11-liters?"
+				},
+				{
+					"Name": "JBL Flip 5 bluetooth speaker",
+					"Description": "I'm sure she'd love teal or black, but why not throw a curveball with snow camo??",
+					"Url": "https://www.jbl.com/bluetooth-speakers/JBL+FLIP+5-.html?dwvar_JBL%20FLIP%205-_color=Black%20Matte-South%20America-Current"
+				}
+			],
+			"DoNotBuy": [
+
+			]
+		},
+		{
+			"Id": 8,
+			"Name": "Phil",
+			"Ineligible": [
+				7,
+				1,
+				2
+
+			],
+			"Email": "phil.a.lindeman@gmail.com",
+			"PantSize": "32W 30L",
+			"ShirtSize": "medium",
+			"ShoeSize": "10.5-11",
+			"FavoriteThings": [
+				{
+					"Name": "Zoic essential liner with fly",
+					"Description": "medium, no color preference... they are picked over so if you can't find one no worries",
+					"Url": "https://www.scheels.com/p/mens-zoic-essential-liner-with-fly/71655111262.html?store=&gclid=CjwKCAiAzNj9BRBDEiwAPsL0d2THgiGEkO1Ap4LE5k7oPCgLHvWs9jUNZpYAL7hJnQNrBMPuXn7kMBoC5PsQAvD_BwE"
+				},
+				{
+					"Name": "Please Kill Me: The Uncensored Oral History of Punk",
+					"Description": "paperback",
+					"Url": "https://www.amazon.com/dp/0802142648/?coliid=IHOYO4XPJZTT7&colid=93U3ONXTJ0YW&psc=0&ref_=lv_ov_lig_dp_it"
+				},
+				{
+					"Name": "On Writing: A Memoir of the Craft",
+					"Description": "paperback",
+					"Url": "https://www.amazon.com/dp/1439156816/?coliid=I1YWDPMAS5DRA8&colid=93U3ONXTJ0YW&psc=0&ref_=lv_ov_lig_dp_it"
+				},
+				{
+					"Name": "The Best American Noir of the Century",
+					"Description": "paperback",
+					"Url": "https://www.amazon.com/dp/B005LVR786/?coliid=I15IUQS59YX0GR&colid=93U3ONXTJ0YW&psc=0&ref_=lv_ov_lig_dp_it"
+				},
+				{
+					"Name": "Saga",
+					"Description": "Vol 3, 4, 5, 6, 7, 8 or 9 (I've got 1 and 2)",
+					"Url": "https://imagecomics.com/comics/list/series/saga/collected-editions"
+				}
+			],
+			"SpouseSuggestion": [
+				{
+					"Name": "Men's Watch--doesn't have to be exact one in link",
+					"Description": "Silver",
+					"Url": "https://www.macys.com/shop/product/bulova-mens-diamond-accent-stainless-steel-bracelet-watch-41mm?ID=11481900&CategoryID=57386"
+				},
+				{
+					"Name": "Bike Chamois",
+					"Description": "Large",
+					"Url": "https://www.amazon.com/Greatness-Cycling-Chamois-Athletic-Underwear/dp/B07STRY4BJ"
+				},
+				{
+					"Name": "Tree Fleece Classic Crew",
+					"Description": "Black/Large",
+					"Url": "https://www.tentree.com/products/treefleece-classic-crew?variant=32300807258199"
+				}
+			],
+			"DoNotBuy": [
+				"Corona. It's skunky and overpriced"
+			]
+		}
+	]
+}

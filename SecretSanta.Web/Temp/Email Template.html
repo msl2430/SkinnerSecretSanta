@@ -1,0 +1,78 @@
+<html xmlns='http://www.w3.org/1999/xhtml' style='width: 100%;'>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+</head>
+<body style='background-color: white; margin: 0; padding: 0; font-family: 'arial', 'sans-serif'; width: 100%;'>
+	<table width='640px' cellpadding='0' cellspacing='0' border='0' style='margin: 0 auto;'>
+	<tr>
+		<td>
+			<table cellpadding='0' cellspacing='0' class='table-row'>
+				<tr>
+					<td colspan='3' align='center' style='padding-top: 10px; background-color: white; text-align: left; font-size: 12px; line-height: 18px; mso-line-height-rule: exactly;'>
+						<div style='font-size: 16px; line-height: 16px; mso-line-height-rule: exactly;'>&nbsp;</div>
+						<span>
+							This year your Skinner Secret Santa is:
+						</span>
+						<div style='font-size: 14px; line-height: 14px; mso-line-height-rule: exactly;'>&nbsp;</div>
+						<span style='font-size: 22px; line-height: 30px; mso-line-height-rule: exactly;'>
+							<b>{{this.Name}}</b>
+						</span>
+						<div style='font-size: 14px; line-height: 14px; mso-line-height-rule: exactly;'>&nbsp;</div>
+						<span>
+							Here is their response to the questionaire:
+						</span>
+						<p style='margin 0 !important;'>How do you measure?</p>
+						<ul style='margin 0: !important;'>
+							<li>Pant Size: {{this.PantSize}}</li>
+							<li>Shirt Size: {{this.ShirtSize}}</li>
+							<li>Shoe Size: {{this.ShoeSize}}</li>
+						</ul>
+						<p style='margin 0 !important;'>Whats on your wishlist?</p>
+						<ul style='margin 0: !important;'>
+							{{#each FavoriteThings}}
+								<li>
+									{{this.Name}} ({{this.Description}})<br/>
+									<a href="{{this.Url}}">{{this.Url}}</a>
+								</li>
+							{{/each}}
+						</ul>	
+						<p style='margin 0 !important;'>Do not buy:</p>
+						<ul style='margin 0: !important;'>
+							{{#each DoNotBuy}}
+								<li>{{this}}</li>
+							{{/each}}
+						</ul>	
+						<p style='margin 0 !important;'>Spouse Suggestions:</p>
+						<ul style='margin 0: !important;'>
+							{{#each Suggestions}}
+								<li>
+									{{this.Name}} ({{this.Description}})<br/>
+									<a href="{{this.Url}}">{{this.Url}}</a>
+								</li>
+							{{/each}}
+						</ul>
+						<div style='font-size: 16px; line-height: 16px; mso-line-height-rule: exactly;'>&nbsp;</div>
+						<span>
+							Rules:
+						</span>
+						<ul style='margin: 0 !important;'>
+							<li>$200 budget (you can spend $200 on one item or many)</li>
+							<li>One surprise item must be included</li>
+							<li>Nobody should have their significant other, if this has happened to you let Mike know and we will redo the random generator</li>
+							<li>We will designate a time on Christmas Day to have a video call and reveal our Secret Santa and open presents</li>
+							<li>You must get your presents to the location of your Secret Santa by Christmas Eve</li>
+							<li>To maintain the integrity of Secret Santa please keep collusion to a minimum.</li>
+						<div style='font-size: 16px; line-height: 16px; mso-line-height-rule: exactly;'>&nbsp;</div>
+					</td>
+				</tr>
+				<tr>
+				<td colspan='3' style='padding: 8px; line-height: 1.42857143; vertical-align: top;'>
+
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

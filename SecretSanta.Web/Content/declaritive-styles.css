@@ -1,0 +1,101 @@
+﻿.no-border {
+    border: none !important;
+}
+.section-padding {
+    padding: 20px 0;
+}
+.break-word {
+    word-wrap: break-word;
+}
+.text-bold {
+    font-weight: bold;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.no-top-margin {
+	margin-top: 0 !important;
+}
+.position-relative {
+    position: relative;
+}
+.uppercase-text {
+    text-transform: uppercase;
+}
+.middle-align {
+    vertical-align: middle !important;
+}
+.text-italics {
+    font-style: italic;
+}
+.clickable {
+    cursor: pointer;
+}
+.clickable-hover:hover {
+    cursor: pointer;
+	background-color: rgba(255, 250, 159, 0.35) !important;
+ 
+}
+.underline {
+    text-decoration: underline;
+}
+
+.top-margin {
+	margin-top: 3%;
+}
+
+.margin-auto {
+	margin: auto;
+}
+
+.smaller {
+	font-size: 75% !important;
+}
+.top-align {
+	vertical-align: top;
+}
+
+.no-transition {
+	transition: none !important;
+}
+
+.btn-smaller {
+	padding: 2px 5px !important;
+	font-size: 10px !important;
+	line-height: 1.5 !important;
+    border-radius: 3px !important;
+}
+
+.btn-highlight {
+	background-color: #3180B9;
+    border-color: #3285bc;
+	color: white;
+}
+
+.text-highlight {
+	color: #3180B9;
+}
+
+.font-montserrat {
+	font-family: 'Montserrat' !important;
+}
+
+.overflow-hidden {
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+}
+.no-padding-left {
+    padding-left: 0 !important;
+}
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.two-column-dropdown {
+	-webkit-column-count: 2;
+    -moz-column-count: 2;
+	column-count: 2;
+}
