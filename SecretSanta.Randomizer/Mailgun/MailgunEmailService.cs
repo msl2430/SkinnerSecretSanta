@@ -6,10 +6,10 @@ namespace SecretSanta.Mailgun
 {
     public static class MailgunEmailService
     {
-        private static string ApiRoot = "https://api.mailgun.net/v3";
-        private static string FromDomain = "mail.goelevent.com";
-        private static string MailgunDomain = "mail.goelevent.com";
-        private static string MailgunApiKey = "key-cfb7b778a48c6aa7b310d30727fbf511";
+        private static string ApiRoot = "";
+        private static string FromDomain = "";
+        private static string MailgunDomain = "";
+        private static string MailgunApiKey = "";
 
         public static void SendEmail(string giverName, string giverEmail, MemberList.Member recipient, bool isTest)
         {
