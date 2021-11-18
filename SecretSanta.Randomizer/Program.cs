@@ -13,6 +13,7 @@ namespace SecretSanta
     {
         public IList<Member> Members { get; set; }
 
+        [Serializable]
         public class Member
         {
             public int Id { get; set; }
@@ -34,6 +35,7 @@ namespace SecretSanta
                 SpouseSuggestion = new List<GiftItem>();
             }
 
+            [Serializable]
             public class GiftItem
             {
 	            public string Name { get; set; }

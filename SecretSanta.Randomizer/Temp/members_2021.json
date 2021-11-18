@@ -33,7 +33,7 @@
 			Id: 6,
 			Name: "Fritz",
 			Ineligible: [ 5, 8, 7 ],
-			Email: "fritz.mavencamp@nutrien.com ",			
+			Email: "fritz.mavencamp@nutrien.com",			
 		},
 		{
 			Id: 7,			

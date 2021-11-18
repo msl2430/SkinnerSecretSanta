@@ -1,0 +1,167 @@
+{
+	Members: [
+		{
+			Id: 1,
+			Year: 2019,
+			Name: "Mike",
+			Ineligible: [ 2, 4, 6 ],
+			Email: "me@mikeslevine.com",
+			PantSize: "32w 32l",
+			ShirtSize: "Medium (Slim Fit)",
+			ShoeSize: "11",
+      FavoriteThings: [
+        "Tile Mate + Slim Combo: https://www.thetileapp.com/en-us/products/combo",
+        "Garment Rack: https://www.amazon.com/Simple-Houseware-Industrial-Garment-Bracket/dp/B07MBR1V6Z/ref=sr_1_9?crid=3NS9TNOOIUMIL&keywords=simple+houseware+garment+rack&qid=1573936411&sprefix=simple+houseware+gar%2Caps%2C164&sr=8-9",
+        "Mission Belt (Gun Metal + Black Leather Size Small): https://www.amazon.com/Mission-Belt-Mens-Ratchet-Leather/dp/B0161RERZE/ref=sr_1_6?ie=UTF8&qid=1543070078&sr=8-6&keywords=mission%2Bbelt&th=1&psc=1",
+      ],
+      DoNotBuy: [
+        "Socks",
+        "Tee Shirts",
+        "Jeans",
+      ],
+      "SpouseSuggestion": ""
+		},
+		{
+			Id: 2,
+			Year: 2019,
+			Name: "Corri",
+      Ineligible: [ 1, 5, 3 ],
+			Email: "corri.skinner@gmail.com",
+			PantSize: "4 or 27",
+			ShirtSize: "XS",
+			ShoeSize: "6",
+			FavoriteThings: [
+			  "Lululemon Wunder Under High-Rise Crop 21 in black: https://shop.lululemon.com/p/women-crops/Wunder-Under-Crop-Hi-Rise-FullLuon/_/prod7390499?color=0001 ",
+			  "Echo Spot in black: https://www.amazon.com/Amazon-VN94DQ-Echo-Spot-Black/dp/B073SQYXTW?th=1 ",
+			  "Nest candles/liquid diffuser refill in grapefruit: https://www.nestfragrances.com/shop-by-collection/best-sellers/grapefruit ",
+			  "Harry Pottter Slytherin sweater: https://www.hottopic.com/product/harry-potter-slytherin-girls-quidditch-sweater/11397214.html#q=harry%2Bpotter%2Bslytherin%2Bsweater&start=2",
+			],
+			DoNotBuy: [
+				"Shoes",
+				"Photos/anything to hang (we've run out of wall space)",
+				"Books",
+				"Booze (but if you insist make it red wine)"
+			]
+		},
+		{
+			Id: 3,
+			Name: "Vicki",
+			Ineligible: [ 4, 8, 5 ],
+			Email: "skinnerv@pa.metrocast.net",
+			PantSize: "10",
+			ShirtSize: "Medium",
+			ShoeSize: "5 Ladies/Adult or 3 1/2 Girls",
+      FavoriteThings: [
+        "BEBE SPORT Women's Bomber Bubble Jacket with Detachable Sherpa Lined Hood",
+        "Amazon gift card for Kindle books",
+        "Rafaella Women's Weekend Skinny Leg Slim Fit Jeans",
+      ],
+			DoNotBuy: [
+				"Socks",
+				"Underwear"
+			]
+		},
+    {
+      "Id": 4,
+	  Year: 2019,
+      "Name": "Larry",
+      "Ineligible": [ 3, 6, 7 ],
+      "Email": "skindc@pa.metrocast.net",
+      "PantSize": "33w - 30 inseam",
+      "ShirtSize": "Large",
+      "ShoeSize": "7.5 4EEE",
+      "FavoriteThings": [
+        "Midway USA Competition electronic prochrono digital chronograph",
+        "Tommy John boxer briefs medium",
+      ],
+      "DoNotBuy": [
+        "Metal Detector + Pin Pointer",
+        "Socks",
+        "Bacon"
+      ]
+    },
+    {
+      "Id": 5,
+	  Year: 2019,
+      "Name": "Cassie",
+      "Ineligible": [ 6, 7, 2 ],
+      "Email": "cassie11r@hotmail.com",
+      "PantSize": "6, sweats S, yoga M",
+      "ShirtSize": "itted S, loose M",
+      "ShoeSize": "6",
+      "FavoriteThings": [
+        "Gift cards for stitch fix, micheals, hobby lobby, amazon (for books)",
+        "Yoga pants black https://shop.lululemon.com/p/women-crops/Wunder-Under-Crop-Hi-Rise-Full-On-Lux/_/prod2080037?color=0001&sz=8",
+        "Sonicare  sanitizer https://www.amazon.com/gp/aw/d/B00BISI9AG/ref=mp_s_a_1_3_a_it?ie=UTF8&qid=1536030127&sr=8-3&keywords=sonicare+sanitizer&dpPl=1&dpID=31SswrLGHbL&ref=plSrc"
+      ],
+      "DoNotBuy": [
+        "Socks",
+        "Bags"
+      ]
+    },
+		{
+			Id: 6,
+			Year: 2019,
+			Name: "Fritz",
+			Ineligible: [ 5, 1, 8 ],
+			Email: "fritz.mavencamp@cpsagu.com",
+			PantSize: "34x39",
+			ShirtSize: "Large",
+			ShoeSize: "11",
+      FavoriteThings: [
+        "jbl flip 4",
+        "223/5.56 or 7mm-08 ammo",
+        "Polaris ranger accessories",
+        "stuff from Rocky Mountain ATV/MC",
+      ],
+			DoNotBuy: [
+				"You can never have too many guns, tools, or gear"
+			]
+		},
+		{
+			Id: 7,
+			Year: 2019,
+			Name: "Sara",
+			Ineligible: [ 8, 2, 4 ],
+			Email: "sara.skinner7@gmail.com",
+			PantSize: "28",
+			ShirtSize: "M",
+			ShoeSize: "7",
+      FavoriteThings: [
+        "https://www.amazon.com/Collapsible-Stainless-Food-grade-Household-Outdoor-Blue/dp/B07GTLNNLY/ref=sr_1_2_m_sspa?s=hpc&ie=UTF8&qid=1542994461&sr=1-2-spons&keywords=reusable+straws&psc=1 ",
+        "https://www.amazon.com/Caldo-Womens-Screentouch-Warmer-Weather/dp/B00RJMLM2C/ref=pd_sbs_193_24?_encoding=UTF8&pd_rd_i=B00RJMLM2C&pd_rd_r=503069b3-ef67-11e8-bf9b-571f7e12ada0&pd_rd_w=mCDRz&pd_rd_wg=QASOS&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=7d5d9c3c-5e01-44ac-97fd-261afd40b865&pf_rd_r=D11Z744WFW35A2525F0A&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&refRID=D11Z744WFW35A2525F0A  Black Gloves\t",
+        "https://www.discountdance.com/dancewear/style_ES0410L_html?pid=4428&shop=Style&rfilter=Category%23Shoes%3A%3ASubCategory%23Shoes%21Teaching+Shoes&SID=1322603157 Size 6.5",
+        "https://www.discountdance.com/dancewear/style_N8460_html?pid=26122&shop=Style&rfilter=Category%23Leotards%3AGenre%23Ballet&SID=1322604926 Light Blue/Eggplant size Medium",
+        "https://www.wayfair.com/rugs/pdp/bloomsbury-market-filip-teal-area-rug-blms5496.html?piid=27431999    5'x7' Teal and Purple\t",
+        "Slippers!"
+      ],
+			DoNotBuy: [
+				"Winter Clothing",
+				"Hats",
+				"Clothes"
+			]
+		},
+		{
+			Id: 8,
+			Year: 2019,
+			Name: "Phil",
+			Ineligible: [ 7, 3, 1 ],
+			Email: "phil.a.lindeman@gmail.com",
+			PantSize: "32 length, 30 waist",
+			ShirtSize: "Large (or medium if it's like an active shirt)",
+			ShoeSize: "Men's 11",
+      FavoriteThings: [
+        "Solo: A Stat Wars Story (blu ray)",
+        "Wooden ear plugs, 4gauge (5mm), if they're sold out dont worry about it... https://www.etsy.com/listing/267327298/dark-walnut-wood-plugs-organic-plugs?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=wooden+gauges&ref=sr_gallery-1-5&pro=1",
+        "Troy Lee Designs moto jersey, gray... https://shop.troyleedesigns.com/gp-jet-jersey?quantity=1&color=54",
+        "Handheld vacuum dirt devil thing, this one is good... https://www.bissell.com/bissell-pet-hair-eraser-corded-handheld-vacuum-33a1b"
+      ],
+			DoNotBuy: [
+				"Kitchen stuff",
+				"Bedroom Stuff",
+				"Gap, Old Navy, or Graphic Tees",
+				"Shorts"
+			]
+		},
+	]
+}
