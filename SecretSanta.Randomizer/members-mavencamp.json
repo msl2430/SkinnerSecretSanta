@@ -1,0 +1,81 @@
+{
+  "Members": [
+    {
+      "Id": 1,
+      "Name": "Mary",
+      "Ineligible": [
+        2
+      ],
+      "Email": "quilthappy1031@gmail.com"
+    },
+    {
+      "Id": 2,
+      "Name": "Fred",
+      "Ineligible": [
+        1
+      ],
+      "Email": "quilthappy1031@gmail.com"
+    },
+    {
+      "Id": 3,
+      "Name": "Abby",
+      "Ineligible": [
+      ],
+      "Email": "Abbykaylynn2017@gmail.com "
+    },
+    {
+      "Id": 5,
+      "Name": "Cassie",
+      "Ineligible": [
+        6
+      ],
+      "Email": "cassie11r@hotmail.com"
+    },
+    {
+      "Id": 6,
+      "Name": "Fritz",
+      "Ineligible": [
+        5
+      ],
+      "Email": "fritz.mavencamp@nutrien.com"
+    },
+    {
+      "Id": 4,
+      "Name": "Cayden",
+      "Ineligible": [],
+      "Email": "mavencampc429@gmail.com"
+    },
+    {
+      "Id": 7,
+      "Name": "Shirlee",
+      "Ineligible": [
+        8
+      ],
+      "Email": "Sdtaber14@gmail.com"
+    },
+    {
+      "Id": 8,
+      "Name": "Matt",
+      "Ineligible": [
+        7
+      ],
+      "Email": "mtaber05@hotmail.com"
+    },
+    {
+      "Id": 9,
+      "Name": "Jen",
+      "Ineligible": [
+        10
+      ],
+      "Email": "mtaber05@hotmail.com"
+    },
+    {
+      "Id": 10,
+      "Name": "Mark",
+      "Ineligible": [
+        9
+      ],
+      "Email": "Firepiepizza@gmail.com"
+    }
+  ]
+}

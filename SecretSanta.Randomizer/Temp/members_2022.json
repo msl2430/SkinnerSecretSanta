@@ -1,0 +1,432 @@
+{ 
+	"Members": [
+	{
+	   "Id":1,
+	   "Name": "Mike",
+	   "Email": "me@mikeslevine.com",
+	   "Year":2022,
+	   "Ineligible": [ 2, 8, 4 ],
+	   "PantSize":"32x32",
+	   "ShirtSize":"Small",
+	   "ShoeSize":"10.5",
+	   "FavoriteThings":[
+		  {
+			 "Name":"Bissell Pet Stain Eraser PowerBrush",
+			 "Description":"",
+			 "Url":"https://www.amazon.com/gp/product/B08HDKZKHK"
+		  },
+		  {
+			 "Name":"Superdry Studios Essential Crew Jumper",
+			 "Description":"Small | Light Grey, Navy, Red, Grey, Cream",
+			 "Url":"https://www.superdry.com/us/mens/sweaters/details/195709/studios-essential-crew-jumper-light-grey"
+		  },
+		  {
+			 "Name":"Mack Weldon WARMKNIT Waffle Long Sleeve Crew",
+			 "Description":"Small | Winestain, Gulfstream Heather, Walnut Heather, Charcoal Heather",
+			 "Url":"https://mackweldon.com/products/warmknit-waffle-long-sleeve-charcoal-heather"
+		  },
+		  {
+			 "Name":"VW Golf R Rear Seat Cover",
+			 "Description":"",
+			 "Url":"https://parts.vw.com/p/Volkswagen_2022_Golf-R/Rear-Seat-Cover-with-Volkswagen-Logo/105814313/5H0061678041.html"
+		  },
+		  {
+			 "Name":"Gorilla Grip Stainless Steel Box Grater",
+			 "Description":"",
+			 "Url":"https://www.amazon.com/gp/product/B08FK3HCSG"
+		  },
+		  {
+			 "Name":"Simply Genius Plastic Cutting Boards",
+			 "Description":"Grey",
+			 "Url":"https://www.amazon.com/gp/product/B091KMMQRW"
+		  }
+	   ],
+	   "SpouseSuggestion":[
+		  {
+			"Name":"Tech Cashmere Glove",
+			"Description":"Nine Iron Heather",
+			"Url":"https://mackweldon.com/products/tech-cashmere-glove-nine-iron-heather"
+		  }
+	   ],
+	   "DoNotBuy":[
+		  "Shoes",
+		  "Booze",
+		  "Drinkware"
+	   ]
+	},
+	{
+	   "Id":2,
+	   "Name": "Corri",
+	   "Year":2022,
+	   "Email": "corri.skinner@gmail.com",
+	   "Ineligible": [ 1, 5, 6 ],
+	   "PantSize":"S/4/27",
+	   "ShirtSize":"XS/4",
+	   "ShoeSize":"6",
+	   "FavoriteThings":[
+		  {
+			 "Name":"Lululemon hat",
+			 "Description":"black",
+			 "Url":"https://shop.lululemon.com/p/hats/Baller-Hat-II-Logo/_/prod11050025?color=0001&sz=ONESIZE"
+		  },
+		  {
+			 "Name":"Scuba jogger",
+			 "Description":"black",
+			 "Url":"https://shop.lululemon.com/p/womens-joggers/Scuba-High-Rise-Jogger-Crop/_/prod10830103?color=0001"
+		  },
+		  {
+			 "Name":"Away packing cubes",
+			 "Description":"asphalt",
+			 "Url":"https://www.awaytravel.com/accessories/packing-cubes-four?color=asphalt"
+		  },
+		  {
+			 "Name":"Lo & Sons bag",
+			 "Description":"dove grey",
+			 "Url":"https://www.loandsons.com/products/catalina-deluxe-organic-canvas-dove-grey"
+		  },
+		  {
+			 "Name":"Gallery Leather Academic Leather Planner - 9 x 7",
+			 "Description":"Selected leather: Acadia Burgundy One Line: Corri Type Color: Blind Embossed Type Style: Upper/Lower Location: Lower Right Add Plastic Pocket: 1 Professional/Family/Academic Plastic Pocket +$3.00 Planner Year 2023",
+			 "Url":"https://www.galleryleather.com/planners/academic-leather-planner"
+		  }
+	   ],
+	   "SpouseSuggestion":[
+		  {
+			  "Name":"Apple Air Tags",
+			 "Description":"",
+			 "Url":"https://www.apple.com/shop/buy-airtag/airtag"
+		  }
+	   ],
+	   "DoNotBuy":[
+		  "candles",
+		  "coffee mugs",
+		  "winter hat/gloves"
+	   ]
+	},
+	{
+	   "Id":3,
+	   "Name": "Vicki",
+	   "Email": "vskinner715@gmail.com",
+	   "Year":2022,
+	   "Ineligible": [ 4, 6, 7 ],
+	   "PantSize":"12- 14",
+	   "ShirtSize":"woman's large",
+	   "ShoeSize":"5",
+	   "FavoriteThings":[
+		  {
+			 "Name":"Small Crossbody Cell Phone Purse for Women, Mini Messenger Shoulder Handbag Wallet with Credit Card Slots",
+			 "Description":"Color: B-01-coffee-larger",
+			 "Url":"https://www.amazon.com/dp/B09WQRRTF2?pd_rd_i=B07PSJS7RY&pf_rd_p=b000e0a0-9e93-480f-bf78-a83c8136dfcb&pf_rd_r=H9SMVJ4B2H5GTK9KP3ZC&pd_rd_wg=UiNVa&pd_rd_w=E41CN&pd_rd_r=4962204b-bfb9-4c43-ba5e-7e11d7c11367&th=1"
+		  },
+		  {
+			 "Name":"VALOLIA Women's Casual Swing Sweatshirt Long Sleeve Zipper Lapel Fashion Pullover Tunic",
+			 "Description":"large- Wine, Dark Cyan or  Dark Violet",
+			 "Url":"https://www.amazon.com/dp/B09FXZL6YT/ref=sspa_dk_detail_0?ie=UTF8&pd_rd_i=B0B68TXYYDp13NParams&s=apparel&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&psc=1"
+		  },
+		  {
+			 "Name":"ComforthoFit™ Cushion Plus - Ergonomic Pain Relief Footwea",
+			 "Description":"US 5- Dimm Grey",
+			 "Url":"https://comforthofit.com/products/cushion-plus-comforthofit-ergonomic-shoe?currency=USD&variant=43083090690281&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&utm_source=google&utm_medium=paid&utm_campaign=17659667229&utm_content=&utm_term=&gadid=&gclid=CjwKCAiAjs2bBhACEiwALTBWZf6CrsKmmqfAeH73_aV8c6EmXYTx2n4feDX30z8Hlp9q78QpiimPnBoCf80QAvD_BwE"
+		  },
+		  {
+			 "Name":"American Tourister Stratum XLT Expandable Hardside Luggage with Spinner Wheels, Blue Spruce, Checked-Medium 24-Inch",
+			 "Description":"Blue Spruce",
+			 "Url":"https://www.amazon.com/American-Tourister-Checked-Medium-Pink-Blush/dp/B07QM2NY9N/ref=sr_1_9?crid=1ONGAK208K0N3&keywords=large%2Bsuitcase&qid=1668556757&sprefix=suitcase-%2B%2Caps%2C113&sr=8-9&th=1"
+		  }
+	   ],
+	   "SpouseSuggestion":[
+		  
+	   ],
+	   "DoNotBuy":[
+		  
+	   ]
+	},
+	{
+	   "Id":4,
+	   "Email": "skindc@pa.metrocast.net",
+	   "Name": "Larry",
+	   "Year":2022,
+	   "Ineligible": [ 3, 1, 2 ],
+	   "PantSize":"medium",
+	   "ShirtSize":"large",
+	   "ShoeSize":"7EEEE",
+	   "FavoriteThings":[
+		  {
+			 "Name":"guide gear atv front basket. item#3042-206503",
+			 "Description":"n/a",
+			 "Url":"sportsmansguid.com"
+		  },
+		  {
+			 "Name":"guidegear guidelite waterproof hunting boots #3042-678455",
+			 "Description":"8 wide or not at all",
+			 "Url":"sportsmansguid.com"
+		  }
+	   ],
+	   "SpouseSuggestion":[
+		  
+	   ],
+	   "DoNotBuy":[
+		  
+	   ]
+	},
+	{
+	   "Id":5,
+	   "Name": "Cassie",
+	   "Email": "cassie11r@hotmail.com",
+	   "Year":2022,
+	   "Ineligible": [ 6, 3, 8 ],
+	   "PantSize":"12, Large",
+	   "ShirtSize":"XL for baggy fit. Large for snug.",
+	   "ShoeSize":"6",
+	   "FavoriteThings":[
+		  {
+			 "Name":"Just Dance 2023",
+			 "Description":"",
+			 "Url":""
+		  },
+		  {
+			 "Name":"Amazon gift card for ebooks and audiobooks",
+			 "Description":"",
+			 "Url":""
+		  },
+		  {
+			 "Name":"Resin Sanding and Polishing Kit",
+			 "Description":"",
+			 "Url":"https://smile.amazon.com/Sanding-Polishing-YASPIT-Scissors-Supplies/dp/B091SM4B22/ref=pd_rhf_d_ee_s_bmx_gp_ed3dkh3n_sccl_2_9/135-8588957-8330461?pd_rd_w=BczQS&content-id=amzn1.sym.dae4aca1-1485-4121-aecd-29a558dc95f4&pf_rd_p=dae4aca1-1485-4121-aecd-29a558dc95f4&pf_rd_r=GNF3SKM68TVBZ9V2XEF0&pd_rd_wg=GabfA&pd_rd_r=d7ebd394-1469-4c32-b9a4-b55164c91ec4&pd_rd_i=B091SM4B22&th=1"
+		  },
+		  {
+			 "Name":"State Flowers Coloring Book",
+			 "Description":"",
+			 "Url":"https://www.blurb.com/b/8881744-state-flowers-of-america-coloring-book"
+		  },
+		  {
+			 "Name":"Book Locket Necklace",
+			 "Description":"Jane Austen, Pride and Prejudice",
+			 "Url":"https://www.uncommongoods.com/product/literary-women-book-locket-necklace#560340000001"
+		  },
+		  {
+			 "Name":"Socks that Give Books",
+			 "Description":"",
+			 "Url":"https://www.uncommongoods.com/product/socks-that-give-books#517260000000"
+		  },
+		  {
+			 "Name":"Literary Insults Poster",
+			 "Description":"",
+			 "Url":"https://www.uncommongoods.com/product/literary-insults-chart#473300000000"
+		  }
+	   ],
+	   "SpouseSuggestion":[
+		  {
+			"Name":"Anything to do with crafting or plants/gardening",
+			 "Description":"",
+			 "Url":""
+		  }
+	   ],
+	   "DoNotBuy":[
+		  "Shoes (unless they are super amazing, and you think I couldn't live without them)",
+		  "Clothes"
+	   ]
+	},
+	{
+	   "Id":6,
+	   "Name": "Fritz",
+	   "Email": "fritz.mavencamp@nutrien.com",
+	   "Year":2022,
+	   "Ineligible": [ 5, 7, 1 ],
+	   "PantSize":"44x46",
+	   "ShirtSize":"Large",
+	   "ShoeSize":"11",
+	   "FavoriteThings":[
+		  {
+			 "Name":"Vest",
+			 "Description":"",
+			 "Url":"https://www.duluthtrading.com/s/DTC/mens-superior-fire-hose-insulated-vest-14008.html?color=IRO"
+		  },
+		  {
+			 "Name":"Tools",
+			 "Description":"",
+			 "Url":"https://www.rockymountainatvmc.com/parts/tusk-10-piece-torx-wrench-set-p"
+		  },
+		  {
+			 "Name":"tools",
+			 "Description":"",
+			 "Url":"https://www.rockymountainatvmc.com/parts/tusk-10-piece-hex-key-wrench-set-p"
+		  },
+		  {
+			 "Name":"tools",
+			 "Description":"",
+			 "Url":"https://www.rockymountainatvmc.com/parts/tusk-3-way-mini-t-handle-wrench-tool-kit-p"
+		  },
+		  {
+			 "Name":"gloves",
+			 "Description":"",
+			 "Url":"https://www.rockymountainatvmc.com/riding-gear/fox-racing-dirtpaw-gloves-p?c=5861"
+		  },
+		  {
+			 "Name":"Sweater",
+			 "Description":"Large moss green ",
+			 "Url":"https://www.carhartt.com/product/K121/loose-fit-midweight-sweatshirt?categoryCode=default&colorCode=026_SW"
+		  },
+		  {
+			 "Name":"vest",
+			 "Description":"Large Black",
+			 "Url":"https://www.carhartt.com/product/104394/relaxed-fit-washed-duck-sherpa-lined-vest?icid=pdp-sec6-product-recs-20221014-fbt-c"
+		  },
+		  {
+			 "Name":"angle grinder",
+			 "Description":"",
+			 "Url":"https://www.homedepot.com/p/RYOBI-ONE-18V-Cordless-4-1-2-in-Angle-Grinder-Tool-Only-PCL445B/318696913"
+		  },
+		  {
+			 "Name":"ryobi power source",
+			 "Description":"",
+			 "Url":"https://www.homedepot.com/p/RYOBI-ONE-18V-Lithium-Ion-Portable-Power-Source-P743/311937362"
+		  },
+		  {
+			 "Name":"portable jump starter",
+			 "Description":"",
+			 "Url":"https://www.homedepot.com/p/DEWALT-1400-Peak-Amp-Portable-Car-Jump-Starter-with-Digital-Compressor-DXAEJ14/300385259?"
+		  },
+		  {
+			 "Name":"tools",
+			 "Description":"",
+			 "Url":"https://www.homedepot.com/p/Crescent-X2-Long-Reach-Pliers-Set-2-Piece-PSX204C/205155920"
+		  },
+		  {
+			 "Name":"tools",
+			 "Description":"",
+			 "Url":"https://www.homedepot.com/p/Crescent-Z2-K9-Straight-Jaw-Dipped-Handle-Tongue-and-Groove-Plier-Set-3-Piece-RTZ2SET3/315227657"
+		  },
+		  {
+			 "Name":"work gloves",
+			 "Description":"Large",
+			 "Url":"https://www.costco.com/wells-lamont-men's-hydrahyde-leather-work-gloves%2c-6-pair.product.100697074.html"
+		  },
+		  {
+			 "Name":"work gloves",
+			 "Description":"large",
+			 "Url":"https://www.costco.com/wells-lamont-men's-leather-work-gloves%2c-6-pair.product.100698771.html"
+		  },
+		  {
+			 "Name":"work gloves",
+			 "Description":"Large 3 pair",
+			 "Url":"https://www.napaonline.com/en/p/BK_7631241?cid=paidsearch_shopping_dcoe_google_monthly-special_202211&campaign=GSC-Promos&campaign_id=6478906937&adgroup_id=78844950918&adtype=pla&gclid=EAIaIQobChMIp96h5OOw-wIVSR2tBh2UEAwpEAYYASABEgKHPvD_BwE&gclsrc=aw.ds&"
+		  }
+	   ],
+	   "SpouseSuggestion":[		  
+		 {
+			 "Name":"High Vis Cotton Jacket",
+			 "Description":"XL",
+			 "Url":"https://www.uline.com/Product/Detail/S-21678-X/High-Visibility-Clothing/Class-3-Hi-Vis-Full-Zip-Hoodie-XL"
+		  },
+		  {
+			 "Name":"Men's Teva Flip Flops",
+			 "Description":"11",
+			 "Url":"https://www.amazon.com/Teva-Mens-Mush-Brick-Black/dp/B003S3SMFG/ref=is_sr_dp_2?crid=3Q9XH393FENXP&keywords=teva%2Bmens%2Bsandals&qid=1668447364&sprefix=teva%2Caps%2C216&sr=8-12&th=1&psc=1"
+		  },
+		  {
+			 "Name":"Under Armour loose fit hoodie ",
+			 "Description":"Navy Blue/ XL Tall",
+			 "Url":"https://www.underarmour.com/en-us/p/tops/mens_ua_rival_fleece_hoodie/1357092.html?dwvar_1357092_color=012&start=0&breadCrumbLast=Men"
+		  }
+	   ],
+	   "DoNotBuy":[
+		  
+	   ]
+	},
+	{
+	   "Id":7,
+	   "Name": "Sara",
+	   "Email": "sara.skinner7@gmail.com",
+	   "Year":2022,
+	   "Ineligible": [ 8, 4, 5 ],
+	   "PantSize":"4/6",
+	   "ShirtSize":"S/M",
+	   "ShoeSize":"7",
+	   "FavoriteThings":[
+		  {
+			 "Name":"Smartwool Socks",
+			 "Description":"M",
+			 "Url":"https://www.smartwool.com/shop/womens-everyday-joviansphere-crew-socks-sw001839?variationId=A22"
+		  },
+		  {
+			 "Name":"Beanie",
+			 "Description":"Twilight Blue Heather",
+			 "Url":"https://www.smartwool.com/shop/womens-hats-beanies"
+		  },
+		  {
+			 "Name":"Solar String Lights",
+			 "Description":"",
+			 "Url":"https://www.nrs.com/mpowerd-luci-solar-string-lights/pp3g"
+		  },
+		  {
+			 "Name":"TenTree Hoodie",
+			 "Description":"Wavelite Silver Cloud Hunter Green",
+			 "Url":"https://www.tentree.com/collections/womens-hoodies-sweatshirts/products/womens-blocked-banshee-hoodie-wavelite-silver-cloud-hunter-green"
+		  },
+		  {
+			 "Name":"Hydroflask Replacement Lid",
+			 "Description":"",
+			 "Url":"https://www.amazon.com/PPCHLR-Hydro-Coffee-Compatible-Replacement/dp/B09WZ3YNZ7?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A2RZT3B2673QU3"
+		  },
+		  {
+			 "Name":"Electronic Cleaner Kit",
+			 "Description":"Blue",
+			 "Url":"https://www.amazon.com/Electronics-Cleaner-Kit-Multifunctional-Bluetooth/dp/B0B4K3GXD5/ref=sr_1_4?keywords=electronic+cleaner+kit&qid=1668539558&sr=8-4"
+		  },
+		  {
+			 "Name":"Charging Block",
+			 "Description":"",
+			 "Url":"https://www.amazon.com/Charger-Upgraded-Certified-Durable-AirPods/dp/B09NY3RSJ2/ref=sr_1_3?crid=1OEFF29H06ZXG&keywords=iphone+charging+block&qid=1668622848&sprefix=iphone+charging+block%2Caps%2C153&sr=8-3"
+		  }
+	   ],
+	   "SpouseSuggestion":[
+		  {
+			 "Name":"Hard sided luggage",
+			 "Description":"medium or large",
+			 "Url":""
+		  }
+	   ],
+	   "DoNotBuy":[
+		  
+	   ]
+	},
+	{
+	   "Id":8,
+	   "Name": "Phil",
+	   "Year":2022,
+	   "Email": "phil.a.lindeman@gmail.com",
+	   "Ineligible": [ 7, 2, 3 ],
+	   "PantSize":"32 waist, 30 length",
+	   "ShirtSize":"Large",
+	   "ShoeSize":"10.5 (44 EU)",
+	   "FavoriteThings":[
+		  {
+			 "Name":"Foundation bike repair stand",
+			 "Description":"",
+			 "Url":"https://www.jensonusa.com/Foundation-Bike-Repair-Stand"
+		  },
+		  {
+			 "Name":"La Sportiva Bushido II trail shoe",
+			 "Description":"10.5 (44EU)",
+			 "Url":"https://www.backcountry.com/la-sportiva-bushido-trail-running-shoe-mens"
+		  },
+		  {
+			 "Name":"Milwaukee ratcheting screwdriver",
+			 "Description":"",
+			 "Url":"https://www.acehardware.com/departments/tools/hand-tools/screwdrivers/2874469"
+		  }
+	   ],
+	   "SpouseSuggestion":[
+		  {
+			 "Name":"White Button Tee",
+			 "Description":"White/Large",
+			 "Url":"https://www.llbean.com/llb/shop/514115?originalProduct=40645&productId=648982&attrValue_0=White&sku=0ATH280002&pla1=0&qs=3155278&pcd=HARVEST10&gclid=CjwKCAiAjs2bBhACEiwALTBWZZqm5E98AtPBSjwNzL_NgO66-wSkBlfsDHP8mQmxGetT4Es0mxIVPxoCQvIQAvD_BwE&gclsrc=aw.ds&SS=B&SN2=CardTest_04&SS2=A&noaa_region=southwest"
+		  }
+	   ],
+	   "DoNotBuy":[
+		  
+	   ]
+	}
+]
+}
