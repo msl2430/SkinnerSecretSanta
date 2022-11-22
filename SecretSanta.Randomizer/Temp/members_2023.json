@@ -1,0 +1,60 @@
+{ 
+	"Members": [
+	{
+	   "Id":1,
+	   "Name": "Mike",
+	   "Email": "me@mikeslevine.com",
+	   "Year":2022,
+	   "Ineligible": [ 2, 4, 6 ],	  
+	},
+	{
+	   "Id":2,
+	   "Name": "Corri",
+	   "Year":2022,
+	   "Email": "corri.skinner@gmail.com",
+	   "Ineligible": [ 1, 6, 7 ],	   
+	},
+	{
+	   "Id":3,
+	   "Name": "Vicki",
+	   "Email": "vskinner715@gmail.com",
+	   "Year":2022,
+	   "Ineligible": [ 4, 7, 8 ],
+	},
+	{
+	   "Id":4,
+	   "Email": "skindc@pa.metrocast.net",
+	   "Name": "Larry",
+	   "Year":2022,
+	   "Ineligible": [ 3, 2, 5 ],	   
+	},
+	{
+	   "Id":5,
+	   "Name": "Cassie",
+	   "Email": "cassie11r@hotmail.com",
+	   "Year":2022,
+	   "Ineligible": [ 6, 8, 2 ],
+	},
+	{
+	   "Id":6,
+	   "Name": "Fritz",
+	   "Email": "fritz.mavencamp@nutrien.com",
+	   "Year":2022,
+	   "Ineligible": [ 5, 1, 3 ],	   
+	},
+	{
+	   "Id":7,
+	   "Name": "Sara",
+	   "Email": "sara.skinner7@gmail.com",
+	   "Year":2022,
+	   "Ineligible": [ 8, 5, 1 ],	   
+	},
+	{
+	   "Id":8,
+	   "Name": "Phil",
+	   "Year":2022,
+	   "Email": "phil.a.lindeman@gmail.com",
+	   "Ineligible": [ 7, 3, 4 ],	   
+	}
+]
+}
