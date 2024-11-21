@@ -4,57 +4,65 @@
 	   "Id":1,
 	   "Name": "Mike",
 	   "Email": "me@mikeslevine.com",
-	   "Year":2022,
+	   "Year":2023,
 	   "Ineligible": [ 2, 4, 6 ],	  
+	   "PantSize":"32x32","ShirtSize":"Small","ShoeSize":"10.5","FavoriteThings":[{"Name":"2-Tier Fabric Shoe Rack","Description":null,"Url":"https://www.target.com/p/2-tier-fabric-shoe-rack-room-essentials-8482/-/A-53164656"},{"Name":"Pasta Fork","Description":null,"Url":"https://www.williams-sonoma.com/products/williams-sonoma-signature-nonstick-pasta-fork/"},{"Name":"Deep Slotted Spoon","Description":null,"Url":"https://www.williams-sonoma.com/products/williams-sonoma-nonstick-deep-slotted-spoon/"},{"Name":"Merino Crew Neck Jumper","Description":"Furnace Red Marl, Bison Marl, Camel Marl","Url":"https://www.superdry.com/us/details/243192/merino-crew-neck-jumper-furnace-red-marl"},{"Name":"Tech Merino Scarf","Description":"True Black","Url":"https://mackweldon.com/products/tech-merino-scarf-true-black"},{"Name":"JACO SmartPro 2.0","Description":null,"Url":"https://www.amazon.com/gp/product/B07694R3ZV"}],"SpouseSuggestion":[{"Name":"Fleece sweatshirt","Description":"Black XS","Url":"https://www.nordstrom.com/s/nike-oversize-fleece-crop-crewneck-sweatshirt/6880845"}],"DoNotBuy":["Shoes"]
 	},
 	{
 	   "Id":2,
 	   "Name": "Corri",
-	   "Year":2022,
+	   "Year":2023,
 	   "Email": "corri.skinner@gmail.com",
 	   "Ineligible": [ 1, 6, 7 ],	   
+	   "PantSize":"25 or 4","ShirtSize":"XS","ShoeSize":"6","FavoriteThings":[{"Name":"Wilton 9x13 Nonstick Ultra Bake Professional Baking Pan with Cover","Description":null,"Url":"https://www.target.com/p/wilton-9-34-x13-34-nonstick-ultra-bake-professional-baking-pan-with-cover/-/A-14901183#lnk=sametab"},{"Name":"Ugg Coquette Shearling Lined Slipper","Description":"Chestnut size 6","Url":"https://www.nordstrom.com/s/coquette-shearling-lined-slipper-women/2836854?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=CHT"},{"Name":"OXO SteeL Wine Stopper and Pourer","Description":null,"Url":"https://www.amazon.com/OXO-SteeL-Stopper-Pourer-Stainless/dp/B00OYQA4U2"},{"Name":"Lululemon Wunder Train Gloves","Description":"XS/S Black","Url":"https://shop.lululemon.com/p/gloves-mittens/Wunder-Train-Gloves/_/prod11020387?color=0001&sz=XS%2FS"},{"Name":"Candle warmer lamp","Description":"white","Url":"https://www.amazon.com/dp/B0BVGSSZWY/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B0BVGSSZWY&pd_rd_w=umngq&content-id=amzn1.sym.d81b167d-1f9e-48b6-87d8-8aa5e473ea8c&pf_rd_p=d81b167d-1f9e-48b6-87d8-8aa5e473ea8c&pf_rd_r=FXCW2QHD2X35DKG87VER&pd_rd_wg=zADk7&pd_rd_r=ed402a70-4265-4aed-a6c2-16f931f3a39e&s=kitchen&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"}],"SpouseSuggestion":[{"Name":"Quiksilver Men's Mathodic Recovery Flip Flop Sandal","Description":"Black/Grey/Brown size 11","Url":"https://www.amazon.com/gp/product/B09628848N?th=1&psc=1"}],"DoNotBuy":["no more Harry Potter please :)"]
 	},
 	{
 	   "Id":3,
 	   "Name": "Vicki",
 	   "Email": "vskinner715@gmail.com",
-	   "Year":2022,
+	   "Year":2023,
 	   "Ineligible": [ 4, 7, 8 ],
+	   "PantSize":"14 woman","ShirtSize":"women's large","ShoeSize":"5","FavoriteThings":[{"Name":"BOSTANTEN Small Crossbody Bags for Women Trendy Leather Phone Wallet Purses Handbags Adjustable Guitar Strap","Description":"black","Url":"https://www.amazon.com/BOSTANTEN-Crossbody-Leather-Handbags-Adjustable/dp/B0CCNWTW4Q/ref=sr_1_44?crid=24402HEWOMXAZ&keywords=small%2Bpurses%2Bfor%2Bwomen&qid=1700688217&sprefix=%2Caps%2C103&sr=8-44&th=1"},{"Name":"amazon gift card to purchase books","Description":null,"Url":null},{"Name":"Topstype Women's Long Sleeve Henley Tops Pullover with Buttons Down Casual Loose Fit V-Neck Tunics","Description":"large- blue, green or red","Url":"https://www.amazon.com/Topstype-Womens-Sleeve-Pullover-Buttons/dp/B07WQ3GC6D/ref=sr_1_1_sspa?crid=1DXWUDCHWONCU&keywords=essential%2Bseven%2Bapparel%2Blong%2Bsleeve%2Bshirts%2Bhenley%2Bwoman&qid=1700936179&sprefix=essential%2Bseven%2Bapparel%2Blong%2Bsleeve%2Bshirts%2Bhenley%2Bwoman%2Caps%2C102&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1"},{"Name":"HOTGIFT Women's T-Shirts Long Sleeve Casual Shirts V Neck Button Tee Tops Loose Comfy Warm Blouse","Description":"large- burgandy","Url":"https://www.amazon.com/HOTGIFT-Womens-Stretch-T-Shirts-XX-Large/dp/B0B7D2TG61/ref=sr_1_19_sspa?crid=KNJOJB13HP9X&keywords=ladies%2Bshirts%2Blong%2Bsleeve&qid=1701024993&sprefix=ladies%2Bshirts%2Caps%2C110&sr=8-19-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&psc=1"},{"Name":"Lush Decor Luxurious Bohemian Bedroom Decor - Elegant Stripe Reversible 3-Piece Cotton Colorful Quilt Cover Set - Soft, Comfortable, Stylish and 100% Cotton - King Size - (Blue & Green)","Description":"Blue and green king size","Url":"https://www.amazon.com/Lush-Decor-Bohemian-Striped-Reversible/dp/B07Z8RSCWC/ref=sr_1_32_sspa?crid=3N4Z8X979Q6JJ&keywords=bed%2Bquilts-%2Bblue%2Band%2Blime%2Bgreen%2Bking%2Bsize&qid=1701123433&s=home-garden&sprefix=bed%2Bquilts-%2Bblue%2Band%2Blime%2Bgreen%2Bking%2Bsize%2Cgarden%2C125&sr=1-32-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1"}],"SpouseSuggestion":[],"DoNotBuy":[]
 	},
 	{
 	   "Id":4,
 	   "Email": "skindc@pa.metrocast.net",
 	   "Name": "Larry",
-	   "Year":2022,
-	   "Ineligible": [ 3, 2, 5 ],	   
+	   "Year":2023,
+	   "Ineligible": [ 3, 2, 5 ],	  
+	   "PantSize":"medium, 33-30","ShirtSize":"large, 16.5, 32-33","ShoeSize":"7.5 EEEE","FavoriteThings":[],"SpouseSuggestion":[],"DoNotBuy":[]	   
 	},
 	{
 	   "Id":5,
 	   "Name": "Cassie",
 	   "Email": "cassie11r@hotmail.com",
-	   "Year":2022,
+	   "Year":2023,
 	   "Ineligible": [ 6, 8, 2 ],
+	   "PantSize":"Large, ","ShirtSize":"Large","ShoeSize":"6","FavoriteThings":[{"Name":"Hey Dude women's with fuzzy ankle","Description":"6/Navy","Url":"https://www.amazon.com/dp/B08D5XGVX5/?coliid=I1JLCXC5FI2ELF&colid=23Q4HC5KD52P0&psc=1&ref_=cm_sw_r_cp_ud_lstpd_SWG754WHCM7AGZ0N6N2Y"},{"Name":"Harry Potter and the Sorcerer's Stone (Harry Potter, Book 1) (MinaLima Edition) (1)","Description":"Book 1","Url":"https://www.amazon.com/dp/1338596705/?coliid=ICM0OPH3T8PPW&colid=23Q4HC5KD52P0&psc=1&ref_=cm_sw_r_cp_ud_lstpd_SWG754WHCM7AGZ0N6N2Y"},{"Name":"Color And Cuss Bad Word Coloring Book For Adults Only: Funny Adults Swear Word Colouring Book For Stress Relieving - 8.5x11 Inches, 28 Pages Motivational & Inspirational Coloring Book","Description":null,"Url":"https://www.amazon.com/dp/B09TDVMW18/?coliid=I2GMMYPXHKZZKC&colid=23Q4HC5KD52P0&psc=1&ref_=cm_sw_r_cp_ud_lstpd_SWG754WHCM7AGZ0N6N2Y"},{"Name":"The Swear Word Coloring Book","Description":null,"Url":"https://www.amazon.com/dp/1250120640/?coliid=IJYOJS1RFTTTI&colid=23Q4HC5KD52P0&psc=1&ref_=cm_sw_r_cp_ud_lstpd_SWG754WHCM7AGZ0N6N2Y"},{"Name":"Kizik Women's Lima","Description":"6/Tidepool","Url":"https://kizik.com/products/womens-lima-tidepool?variant=40485632934045"},{"Name":"KomeStone Rock Tumbler Kit, K1 Professional Large","Description":null,"Url":"https://www.amazon.com/dp/B09PYR2RRT?tag=highlightreviews-286714-20&th=1"},{"Name":"Long Distance Touch Bracelet","Description":"Set of 2","Url":"https://www.uncommongoods.com/product/long-distance-touch-bracelet-set/497070000005"},{"Name":"Retro Point & Shoot Camera Phone Converter","Description":"Black","Url":"https://www.uncommongoods.com/product/retro-point-shoot-camera-phone-converter/575310000001"},{"Name":"Magnetic Poster Frame","Description":null,"Url":"https://www.uncommongoods.com/product/magnetic-poster-frame/485830000003"},{"Name":"Tea Voya Flip","Description":"6/ANTIGUOUS GREY MULTI","Url":"https://www.teva.com/women-flip-flops/voya-flip/1019040.html?dwvar_1019040_color=AGMT"}],"SpouseSuggestion":[{"Name":"Stadium Seat","Description":"Extra Wide/Orange or Black","Url":"https://www.amazon.com/Alpcour-Folding-Stadium-Seat-Waterproof/dp/B09W4G6H3Q/ref=psdc_3395081_t2_B09X23WDB9?th=1"}],"DoNotBuy":[]
 	},
 	{
 	   "Id":6,
 	   "Name": "Fritz",
 	   "Email": "fritz.mavencamp@nutrien.com",
-	   "Year":2022,
+	   "Year":2023,
 	   "Ineligible": [ 5, 1, 3 ],	   
+	   "PantSize":"43x46","ShirtSize":"L","ShoeSize":"11","FavoriteThings":[{"Name":"https://www.homedepot.com/p/Husky-Pliers-Set-4-Piece-90153/313849242","Description":null,"Url":null},{"Name":"https://www.homedepot.com/p/Husky-Magnetic-Tray-HMTRAYN/303676220","Description":null,"Url":null},{"Name":"https://www.homedepot.com/p/Husky-Precision-Hook-and-Pick-Tool-Set-4-Piece-60004H/302435929","Description":null,"Url":null},{"Name":"https://www.homedepot.com/p/Husky-Screwdriver-Set-15-Piece-246340150/204663546","Description":null,"Url":null},{"Name":"https://www.homedepot.com/p/Milwaukee-SHOCKWAVE-1-2-in-Drive-SAE-Deep-Well-6-Point-Impact-Socket-Set-18-Piece-49-66-7093/320559110","Description":null,"Url":null}],"SpouseSuggestion":[{"Name":"Crafting stuff, accessories for a vw beetle","Description":null,"Url":null}],"DoNotBuy":["Sweaters"]
 	},
 	{
 	   "Id":7,
 	   "Name": "Sara",
 	   "Email": "sara.skinner7@gmail.com",
-	   "Year":2022,
-	   "Ineligible": [ 8, 5, 1 ],	   
+	   "Year":2023,
+	   "Ineligible": [ 8, 5, 1 ],	
+	   "PantSize":"6","ShirtSize":"M","ShoeSize":"7","FavoriteThings":[{"Name":"Ten Tree Hoodie Dress","Description":"Urban Green","Url":"https://www.tentree.com/products/french-terry-hoodie-dress-urban-green"},{"Name":"Wet Socks","Description":"Black size medium","Url":"https://www.nrs.com/nrs-hydroskin-05-wetsocks/pkks"},{"Name":"Skygoat Hoodie","Description":"Teal Size Medium","Url":"https://skygoatusa.com/products/skygoat-fleece-hoodie-womens?variant=42764683542686"},{"Name":"Mittens","Description":"Black Size M","Url":"https://www.evo.com/mittens/burton-gore-tex-womens#image=218002/936188/burton-gore-tex-mittens-women-s-.jpg"},{"Name":"Hitster Game","Description":null,"Url":"https://www.amazon.com/Fotorama-Hitster-Jumbo-Ultimate-Families/dp/B00PPWLA20/ref=sr_1_14?crid=1E1I9NBSRILDQ&keywords=music+games&qid=1701061646&sprefix=music+games%2Caps%2C122&sr=8-14"},{"Name":"Hydroflask","Description":"Dew/Lupine/Pacific 32 oz.","Url":"https://www.amazon.com/Hydro-Flask-Wide-Straw-Lupine/dp/B0BG6JSY7X?ref_=Oct_DLandingS_D_1cd6023e_2&th=1"},{"Name":"Lash Primer","Description":null,"Url":"https://www.amazon.com/Maybelline-New-York-Sensational-Lengthening/dp/B0BCQZ29B8/ref=pd_rhf_ee_s_gcx-rhf-llm-mixed_sccl_1_6/132-8809542-9535415?pd_rd_w=8JYer&content-id=amzn1.sym.e9846a4c-21f0-4e2b-8a5c-330d9311c361&pf_rd_p=e9846a4c-21f0-4e2b-8a5c-330d9311c361&pf_rd_r=J67EDJDYTD383KCV6Q8C&pd_rd_wg=QRQf9&pd_rd_r=8fb1cef5-ac97-401b-a764-1c8b79f28c57&pd_rd_i=B0BPTW75RG&psc=1"}],"SpouseSuggestion":[{"Name":"Wireless Headphones","Description":"Must be android compatible","Url":"https://www.target.com/p/jbl-tune-flex-true-wireless-bluetooth-noise-canceling-earbuds/-/A-90150352?preselect=88413606#lnk=sametab"}],"DoNotBuy":[]
 	},
 	{
 	   "Id":8,
 	   "Name": "Phil",
-	   "Year":2022,
+	   "Year":2023,
 	   "Email": "phil.a.lindeman@gmail.com",
-	   "Ineligible": [ 7, 3, 4 ],	   
+	   "Ineligible": [ 7, 3, 4 ],	  
+	   "PantSize":"32 waist, 30 long","ShirtSize":"L","ShoeSize":"M 10.5","FavoriteThings":[{"Name":"Zoic Ether MTB shorts","Description":"Medium, tan","Url":"https://zoic.com/collections/mens-shorts-with-liners/products/ether-shorts-essential-liner?variant=45050603897115"},{"Name":"Bauerfeind sports compression knee support","Description":"Medium, any color, 2 if you can","Url":"https://www.bauerfeind.com/b2c/Products/Knee-Braces/Sports-Compression-Knee-Support/p/YPBF_SPK_SCKS"},{"Name":"Estwing camper's axe","Description":"26","Url":"https://www.northerntool.com/products/estwing-26in-camper-s-axe-vinyl-grip-model-e45a-112884"},{"Name":"E.13 bike cassette","Description":"11 speed, black","Url":"https://www.jensonusa.com/e13-TRS-11-Speed-Cassette-9-44T"}],"SpouseSuggestion":[{"Name":"Dakine ski mittens","Description":"S","Url":"https://www.dakine.com/collections/womens-snow-gloves-mitts/products/fleetwood-mitt-womens?variant=39770972553296"},{"Name":"Dakine ski mittens 2.0","Description":"S, but with fancier insulation than the others","Url":"https://www.dakine.com/collections/womens-snow-gloves-mitts/products/womens-galaxy-mitt?variant=39770973306960"},{"Name":"The ugliest sweater of them all","Description":"S","Url":"https://shop.casabonitadenver.com/collections/christmas-collection/products/casa-bonita-ugly-christmas-sweater"}],"DoNotBuy":[]
 	}
 ]
 }

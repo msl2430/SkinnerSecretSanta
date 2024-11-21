@@ -60,7 +60,7 @@ namespace SecretSanta
             isTest = answer.KeyChar == 'y' || answer.KeyChar == 'Y';
             Start:
             var results = new List<Dictionary<MemberList.Member, MemberList.Member>>();
-            using (var file = File.OpenText("members_2022.json"))
+            using (var file = File.OpenText("members_2023.json"))
             using(var reader = new JsonTextReader(file))
             {
 	            var obj = JToken.ReadFrom(reader);
