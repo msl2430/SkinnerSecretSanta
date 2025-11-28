@@ -1,0 +1,50 @@
+[
+		{
+			Id: 1,
+			Name: "Mike",
+			Ineligible: [ 2, 3, 5],
+			Email: "me@mikeslevine.com",
+		},
+		{
+			Id: 2,
+			Name: "Corri",
+			Ineligible: [ 1, 6, 7],
+			Email: "corri.skinner@gmail.com",			
+		},
+		{
+			Id: 3,
+			Name: "Vicki",
+			Ineligible: [ 4, 1, 2],
+			Email: "skinnerv@pa.metrocast.net",			
+		},
+		{
+		  Id: 4,
+		  Name: "Larry",
+		  Ineligible: [ 3, 8, 6 ],
+		  Email: "skindc@pa.metrocast.net",		  
+		},
+		{
+		  Id: 5,
+		  Name: "Cassie",
+		  Ineligible: [ 6, 4, 8 ],
+		  Email: "cassie11r@hotmail.com",
+		},
+		{
+			Id: 6,
+			Name: "Fritz",
+			Ineligible: [ 5, 7, 1],
+			Email: "fritz.mavencamp@cpsagu.com",			
+		},
+		{
+			Id: 7,			
+			Name: "Sara",
+			Ineligible: [ 8, 5, 4 ],
+			Email: "sara.skinner7@gmail.com",			
+		},
+		{
+			Id: 8,			
+			Name: "Phil",
+			Ineligible: [ 7, 2, 3 ],
+			Email: "phil.a.lindeman@gmail.com",			
+		},
+	]

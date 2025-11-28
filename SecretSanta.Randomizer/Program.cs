@@ -60,7 +60,7 @@ namespace SecretSanta
             isTest = answer.KeyChar == 'y' || answer.KeyChar == 'Y';
             Start:
             var results = new List<Dictionary<MemberList.Member, MemberList.Member>>();
-            using (var file = File.OpenText("members_2023.json"))
+            using (var file = File.OpenText("members_2025.json"))
             using(var reader = new JsonTextReader(file))
             {
 	            var obj = JToken.ReadFrom(reader);
@@ -84,6 +84,8 @@ namespace SecretSanta
                     while (receiver == null)
                     {
                         var rand = (new Random(Guid.NewGuid().GetHashCode()).Next(1, memberList.Members.Count + 1));
+                        //if (giver.Id == 5)
+                        //    rand = 4;
                         receiver = giver.Ineligible.Contains(rand) || giver.Id == rand || results.Any(r => r.Values.Any(v => v.Id == rand))
                             ? null
                             : memberList.Members.First(m=> m.Id == rand);
@@ -106,13 +108,13 @@ namespace SecretSanta
             {
                 foreach (var email in results)
                 {
-                    
+
                     new EmailService().SendEmail(new MailMessage("msl2430@gmail.com", "me@mikeslevine.com")
                     {
                         From = new MailAddress("SecretSanta@gmail.com", "Secret Santa"),
-                        Subject = $"Secret Santa [TEST]", 
-                        Body = IsFullEmail 
-                            ? GetResultsWithGiftEmail(email.First().Key.Name, email.First().Value.Name, email.First().Value) 
+                        Subject = $"Secret Santa [TEST]",
+                        Body = IsFullEmail
+                            ? GetResultsWithGiftEmail(email.First().Key.Name, email.First().Value.Name, email.First().Value)
                             : GetResultsEmail(email.First().Key.Name, email.First().Value.Name),
                         IsBodyHtml = true
                     });
