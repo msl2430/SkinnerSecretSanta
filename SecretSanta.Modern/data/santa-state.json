@@ -1,0 +1,263 @@
+{
+  "activeYear": 2026,
+  "lastOfficialDrawYear": 2025,
+  "members": [
+    {
+      "id": 1,
+      "name": "Mike",
+      "email": "me@mikeslevine.com",
+      "altEmails": [
+        "msl2430@gmail.com"
+      ],
+      "spouseId": 2,
+      "ineligible": [
+        2,
+        3,
+        5
+      ],
+      "history2024ReceiverId": 3,
+      "history2025ReceiverId": 5,
+      "pantSize": "32x32",
+      "shirtSize": "Small",
+      "shoeSize": "10.5",
+      "updatedYear": null,
+      "favoriteThings": [],
+      "doNotBuy": [
+        "Booze",
+        "Drinkware"
+      ],
+      "suggestionsForSpouse": []
+    },
+    {
+      "id": 2,
+      "name": "Corri",
+      "email": "corri.skinner@gmail.com",
+      "altEmails": [],
+      "spouseId": 1,
+      "ineligible": [
+        1,
+        6,
+        7
+      ],
+      "history2024ReceiverId": 6,
+      "history2025ReceiverId": 7,
+      "pantSize": "4 or 26",
+      "shirtSize": "XS",
+      "shoeSize": "6",
+      "updatedYear": null,
+      "favoriteThings": [],
+      "doNotBuy": [
+        "Clothing"
+      ],
+      "suggestionsForSpouse": []
+    },
+    {
+      "id": 3,
+      "name": "Vicki",
+      "email": "skinnerv@pa.metrocast.net",
+      "altEmails": [
+        "vskinner715@gmail.com"
+      ],
+      "spouseId": 4,
+      "ineligible": [
+        4,
+        1,
+        2
+      ],
+      "history2024ReceiverId": 1,
+      "history2025ReceiverId": 2,
+      "pantSize": "12-14",
+      "shirtSize": "Large",
+      "shoeSize": "5",
+      "updatedYear": null,
+      "favoriteThings": [],
+      "doNotBuy": [],
+      "suggestionsForSpouse": []
+    },
+    {
+      "id": 4,
+      "name": "Larry",
+      "email": "skindc@pa.metrocast.net",
+      "altEmails": [],
+      "spouseId": 3,
+      "ineligible": [
+        3,
+        8,
+        6
+      ],
+      "history2024ReceiverId": 8,
+      "history2025ReceiverId": 6,
+      "pantSize": "33-30 medium",
+      "shirtSize": "Large",
+      "shoeSize": "7.5 EEEE (or 8 Wide)",
+      "updatedYear": null,
+      "favoriteThings": [],
+      "doNotBuy": [],
+      "suggestionsForSpouse": []
+    },
+    {
+      "id": 5,
+      "name": "Cassie",
+      "email": "cassie11r@hotmail.com",
+      "altEmails": [],
+      "spouseId": 6,
+      "ineligible": [
+        6,
+        4,
+        8
+      ],
+      "history2024ReceiverId": 4,
+      "history2025ReceiverId": 8,
+      "pantSize": "",
+      "shirtSize": "",
+      "shoeSize": "",
+      "updatedYear": null,
+      "favoriteThings": [],
+      "doNotBuy": [],
+      "suggestionsForSpouse": []
+    },
+    {
+      "id": 6,
+      "name": "Fritz",
+      "email": "fritz.mavencamp@cpsagu.com",
+      "altEmails": [
+        "fritz.mavencamp@nutrien.com"
+      ],
+      "spouseId": 5,
+      "ineligible": [
+        5,
+        7,
+        1
+      ],
+      "history2024ReceiverId": 7,
+      "history2025ReceiverId": 1,
+      "pantSize": "34x36",
+      "shirtSize": "L Tall",
+      "shoeSize": "10.5",
+      "updatedYear": null,
+      "favoriteThings": [],
+      "doNotBuy": [],
+      "suggestionsForSpouse": []
+    },
+    {
+      "id": 7,
+      "name": "Sara",
+      "email": "sara.skinner7@gmail.com",
+      "altEmails": [],
+      "spouseId": 8,
+      "ineligible": [
+        8,
+        5,
+        4
+      ],
+      "history2024ReceiverId": 5,
+      "history2025ReceiverId": 4,
+      "pantSize": "",
+      "shirtSize": "M",
+      "shoeSize": "7",
+      "updatedYear": null,
+      "favoriteThings": [],
+      "doNotBuy": [],
+      "suggestionsForSpouse": []
+    },
+    {
+      "id": 8,
+      "name": "Phil",
+      "email": "phil.a.lindeman@gmail.com",
+      "altEmails": [],
+      "spouseId": 7,
+      "ineligible": [
+        7,
+        2,
+        3
+      ],
+      "history2024ReceiverId": 2,
+      "history2025ReceiverId": 3,
+      "pantSize": "32 waist x 30 long",
+      "shirtSize": "L",
+      "shoeSize": "10.5 US / 44 Euro",
+      "updatedYear": null,
+      "favoriteThings": [],
+      "doNotBuy": [],
+      "suggestionsForSpouse": []
+    }
+  ],
+  "history": [
+    {
+      "year": 2024,
+      "timestamp": "2024-11-25T00:00:00.000Z",
+      "pairings": [
+        {
+          "giverId": 1,
+          "receiverId": 3
+        },
+        {
+          "giverId": 2,
+          "receiverId": 6
+        },
+        {
+          "giverId": 3,
+          "receiverId": 1
+        },
+        {
+          "giverId": 4,
+          "receiverId": 8
+        },
+        {
+          "giverId": 5,
+          "receiverId": 4
+        },
+        {
+          "giverId": 6,
+          "receiverId": 7
+        },
+        {
+          "giverId": 7,
+          "receiverId": 5
+        },
+        {
+          "giverId": 8,
+          "receiverId": 2
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "timestamp": "2025-11-25T00:00:00.000Z",
+      "pairings": [
+        {
+          "giverId": 1,
+          "receiverId": 5
+        },
+        {
+          "giverId": 2,
+          "receiverId": 7
+        },
+        {
+          "giverId": 3,
+          "receiverId": 2
+        },
+        {
+          "giverId": 4,
+          "receiverId": 6
+        },
+        {
+          "giverId": 5,
+          "receiverId": 8
+        },
+        {
+          "giverId": 6,
+          "receiverId": 1
+        },
+        {
+          "giverId": 7,
+          "receiverId": 4
+        },
+        {
+          "giverId": 8,
+          "receiverId": 3
+        }
+      ]
+    }
+  ]
+}
