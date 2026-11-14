@@ -287,7 +287,7 @@ export function buildFestiveEmailHtml({ giver, receiver, allMembers, year, isTes
               <div style="margin-top:26px;background-color:#f9fafb;border-radius:10px;padding:16px 20px;border:1px solid #e5e7eb;">
                 <div style="font-size:13px;font-weight:800;text-transform:uppercase;color:#374151;letter-spacing:0.6px;margin-bottom:8px;">📜 Skinner Secret Santa Rules</div>
                 <ul style="margin:0;padding-left:18px;font-size:13px;color:#4b5563;line-height:1.6;">
-                  <li><strong>$200 budget</strong> (quantity varies).</li>
+                  <li><strong>$250 budget</strong> (quantity varies).</li>
                   <li><strong>One surprise item must be included</strong> — you choose how much of the budget to dedicate to it!</li>
                   <li>If you somehow end up paired with the same person as the last two years or your significant other, tell Mike immediately.</li>
                   <li>Try your best to get your presents to your recipient's location by <strong>Christmas Eve</strong>.</li>
