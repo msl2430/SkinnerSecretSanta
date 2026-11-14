@@ -81,7 +81,7 @@
             <div class="text-3xl mb-1">🎄</div>
             <h2 class="text-xl font-bold">Enter Your Email to Begin</h2>
             <p class="text-xs text-emerald-200 mt-1">
-              No password needed — just enter your family email address to view or update your {{ activeYear }} wishlist.
+              Just enter your email address to view or update your {{ activeYear }} wishlist.
             </p>
           </div>
 
@@ -94,7 +94,7 @@
                 v-model="loginEmail"
                 type="email"
                 required
-                placeholder="e.g. me@mikeslevine.com"
+                placeholder="e.g. you@example.com"
                 class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-[#143628] focus:ring-2 focus:ring-[#143628]/20 outline-none text-base"
               />
             </div>
