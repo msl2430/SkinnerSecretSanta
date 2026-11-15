@@ -137,278 +137,266 @@
 
       <!-- VIEW 2: MEMBER WISHLIST EDITOR -->
       <div v-else-if="activeTab === 'wishlist'" class="space-y-6">
-        <!-- Welcome Banner -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900 mb-2">
-              <span>✨ Updating for Christmas {{ activeYear }}</span>
-              <span v-if="currentUser.updatedYear === activeYear" class="text-emerald-700">• Saved for {{ activeYear }}</span>
-              <span v-else class="text-amber-700">• Pre-filled with your {{ currentUser.updatedYear || 2025 }} items</span>
-            </div>
-            <h2 class="text-2xl font-extrabold text-slate-900">
-              Hey {{ currentUser.name }}! Here is your Secret Santa Questionnaire
-            </h2>
-            <p class="text-sm text-slate-600 mt-1">
-              Update your sizes, wishlist links, and secret hints for <strong>{{ spouseInfo?.name || 'your spouse' }}'s</strong> Secret Santa below.
-            </p>
-          </div>
-          <button
-            @click="saveMemberProfile"
-            :disabled="saving"
-            class="shrink-0 px-6 py-3 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold shadow-md transition cursor-pointer"
-          >
-            {{ saving ? 'Saving...' : '💾 Save My List' }}
-          </button>
-        </div>
-
-        <!-- Section 1: Sizes -->
-        <section class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
-          <h3 class="text-lg font-extrabold text-[#143628] flex items-center gap-2 mb-4">
-            <span>📏</span> How Do You Measure Up? (Sizes)
-          </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div>
-              <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Shirt Size</label>
-              <input
-                v-model="form.shirtSize"
-                type="text"
-                placeholder="e.g. Medium, L Tall"
-                class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-[#143628] outline-none text-sm"
-              />
-            </div>
-            <div>
-              <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Pant Size</label>
-              <input
-                v-model="form.pantSize"
-                type="text"
-                placeholder="e.g. 32x32, 4 or 26"
-                class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-[#143628] outline-none text-sm"
-              />
-            </div>
-            <div>
-              <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Shoe Size</label>
-              <input
-                v-model="form.shoeSize"
-                type="text"
-                placeholder="e.g. 10.5, 7 Wide"
-                class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-[#143628] outline-none text-sm"
-              />
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 2: Wishlist Items -->
-        <section class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
-            <div>
-              <h3 class="text-lg font-extrabold text-[#143628] flex items-center gap-2">
-                <span>🎁</span> What's on Your {{ activeYear }} Wishlist?
-              </h3>
-              <p class="text-xs text-slate-500 mt-0.5">
-                Add specific items, colors/sizes, and product links (Amazon, Home Depot, Etsy, etc.).
-              </p>
-            </div>
-            <div class="flex items-center gap-2">
-              <button
-                type="button"
-                @click="clearWishlistItems"
-                class="px-3 py-1.5 rounded-lg border border-stone-300 hover:bg-stone-100 text-xs font-semibold text-slate-600 transition"
-              >
-                🧹 Clear Old Items
+          <!-- Welcome Banner -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900 mb-2">
+                      <span>✨ Updating for Christmas {{ activeYear }}</span>
+                      <span v-if="currentUser.updatedYear === activeYear" class="text-emerald-700">• Saved for {{ activeYear }}</span>
+                      <span v-else class="text-amber-700">• Pre-filled with your {{ currentUser.updatedYear || 2025 }} items</span>
+                  </div>
+                  <h2 class="text-2xl font-extrabold text-slate-900">
+                      Hey {{ currentUser.name }}! Here is your Secret Santa Questionnaire
+                  </h2>
+                  <p class="text-sm text-slate-600 mt-1">
+                      Update your sizes, wishlist links, and secret hints for <strong>{{ spouseInfo?.name || 'your spouse' }}'s</strong> Secret Santa below.
+                  </p>
+              </div>
+              <button @click="saveMemberProfile"
+                      :disabled="saving"
+                      class="shrink-0 px-6 py-3 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold shadow-md transition cursor-pointer">
+                  {{ saving ? 'Saving...' : '💾 Save My List' }}
               </button>
-              <button
-                type="button"
-                @click="addWishlistItem"
-                class="px-3.5 py-1.5 rounded-lg bg-[#143628] hover:bg-[#1d4d39] text-white text-xs font-bold transition"
-              >
-                + Add Gift Idea
-              </button>
-            </div>
           </div>
 
-          <div v-if="form.favoriteThings.length === 0" class="text-center py-8 bg-stone-50 rounded-xl border border-dashed border-stone-300">
-            <p class="text-sm text-slate-600 font-medium">Your wishlist is currently empty.</p>
-            <button
-              type="button"
-              @click="addWishlistItem"
-              class="mt-3 px-4 py-2 rounded-lg bg-[#143628] text-white text-xs font-bold"
-            >
-              + Add Your First Gift Idea
-            </button>
-          </div>
-
-          <div class="space-y-3">
-            <div
-              v-for="(item, idx) in form.favoriteThings"
-              :key="idx"
-              class="p-4 rounded-xl bg-stone-50/80 border border-stone-200 grid grid-cols-1 sm:grid-cols-12 gap-3 items-start"
-            >
-              <div class="sm:col-span-4">
-                <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Item Name</label>
-                <input
-                  v-model="item.name"
-                  type="text"
-                  placeholder="e.g. Flamingo Estate Candle"
-                  class="w-full px-3 py-2 rounded-lg border border-stone-300 bg-white text-sm"
-                />
+          <!-- Section 0: Required Shipping Address -->
+          <section :class="[
+            'bg-white rounded-2xl p-6 shadow-sm border transition',
+            addressMissingError ? 'border-2 border-red-600 bg-red-50/20' : 'border-stone-200'
+          ]">
+              <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-lg font-extrabold text-[#143628] flex items-center gap-2">
+                      <span>📦</span> Shipping Address &amp; Delivery Instructions
+                      <span class="text-xs font-extrabold uppercase px-2 py-0.5 rounded bg-red-100 text-red-800">
+                          Required
+                      </span>
+                  </h3>
               </div>
-              <div class="sm:col-span-3">
-                <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Color / Size / Notes</label>
-                <input
-                  v-model="item.description"
-                  type="text"
-                  placeholder="e.g. Size M, Black"
-                  class="w-full px-3 py-2 rounded-lg border border-stone-300 bg-white text-sm"
-                />
-              </div>
-              <div class="sm:col-span-4">
-                <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Product Link (URL)</label>
-                <input
-                  v-model="item.url"
-                  type="text"
-                  placeholder="https://..."
-                  class="w-full px-3 py-2 rounded-lg border border-stone-300 bg-white text-sm"
-                />
-              </div>
-              <div class="sm:col-span-1 flex sm:justify-end sm:pt-6">
-                <button
-                  type="button"
-                  @click="form.favoriteThings.splice(idx, 1)"
-                  class="px-2.5 py-2 rounded-lg text-red-600 hover:bg-red-50 text-xs font-bold"
-                  title="Remove item"
-                >
-                  ✕
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 3: Do Not Buy -->
-        <section class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
-          <div class="flex items-center justify-between mb-3">
-            <div>
-              <h3 class="text-lg font-extrabold text-red-800 flex items-center gap-2">
-                <span>🚫</span> Please Do Not Buy Me
-              </h3>
-              <p class="text-xs text-slate-500">
-                Anything you already have too much of (e.g., Booze, Drinkware, Clothing, Candles).
+              <p class="text-xs text-slate-500 mb-3">
+                  Enter your full mailing address. If you have different addresses for <strong>USPS vs. UPS/FedEx</strong> or gate/porch instructions, list them all here!
               </p>
-            </div>
-            <button
-              type="button"
-              @click="form.doNotBuy.push('')"
-              class="px-3 py-1.5 rounded-lg bg-red-50 hover:bg-red-100 text-red-800 text-xs font-bold transition"
-            >
-              + Add Item
-            </button>
-          </div>
-
-          <div v-if="form.doNotBuy.length === 0" class="text-xs text-slate-400 italic">
-            No "Do Not Buy" restrictions added.
-          </div>
-
-          <div class="flex flex-wrap gap-2 mt-2">
-            <div
-              v-for="(dnb, idx) in form.doNotBuy"
-              :key="idx"
-              class="flex items-center gap-1 bg-red-50/70 border border-red-200 rounded-xl px-3 py-1.5"
-            >
-              <input
-                v-model="form.doNotBuy[idx]"
-                type="text"
-                placeholder="e.g. Drinkware"
-                class="bg-transparent text-sm font-medium text-red-950 outline-none w-36"
-              />
-              <button
-                type="button"
-                @click="form.doNotBuy.splice(idx, 1)"
-                class="text-red-500 hover:text-red-800 font-bold text-xs ml-1"
-              >
-                ✕
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 4: Spouse Insider Suggestions -->
-        <section class="bg-emerald-950/5 rounded-2xl p-6 shadow-sm border-2 border-emerald-800/20">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
-            <div>
-              <h3 class="text-lg font-extrabold text-[#143628] flex items-center gap-2">
-                <span>🕵️</span> Secret Insider Hints for {{ spouseInfo?.name || 'Your Spouse' }}'s Santa
-              </h3>
-              <p class="text-xs text-slate-600 mt-0.5">
-                Anything you enter here will automatically be sent to <strong>whoever draws {{ spouseInfo?.name || 'your spouse' }}</strong> (and {{ spouseInfo?.name || 'your spouse' }} won't see it!).
+              <textarea v-model="form.shippingAddress"
+                        rows="3"
+                        required
+                        @input="addressMissingError = false"
+                        placeholder="e.g. 123 Main St, Cranford, NJ 07016 (or separate USPS PO Box vs. UPS/FedEx physical address)"
+                        :class="[
+              'w-full px-3.5 py-2.5 rounded-xl border outline-none text-sm leading-relaxed',
+              addressMissingError
+                ? 'border-red-600 focus:border-red-700 bg-white'
+                : 'border-stone-300 focus:border-[#143628]'
+            ]"></textarea>
+              <p v-if="addressMissingError" class="text-xs font-bold text-red-700 mt-1.5">
+                  ⚠️ Please enter your shipping address before saving your questionnaire.
               </p>
-            </div>
-            <button
-              type="button"
-              @click="form.suggestionsForSpouse.push({ name: '', description: '', url: '' })"
-              class="px-3.5 py-1.5 rounded-lg bg-[#143628] hover:bg-[#1d4d39] text-white text-xs font-bold transition shrink-0"
-            >
-              + Add Hint for {{ spouseInfo?.name || 'Spouse' }}
-            </button>
-          </div>
+          </section>
 
-          <div v-if="form.suggestionsForSpouse.length === 0" class="text-xs text-slate-500 italic">
-            No secret hints entered for {{ spouseInfo?.name || 'your spouse' }} yet.
-          </div>
+          <!-- Section 1: Sizes -->
+          <section class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
+              <h3 class="text-lg font-extrabold text-[#143628] flex items-center gap-2 mb-4">
+                  <span>📏</span> How Do You Measure Up? (Sizes)
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div>
+                      <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Shirt Size</label>
+                      <input v-model="form.shirtSize"
+                             type="text"
+                             placeholder="e.g. Medium, L Tall"
+                             class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-[#143628] outline-none text-sm" />
+                  </div>
+                  <div>
+                      <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Pant Size</label>
+                      <input v-model="form.pantSize"
+                             type="text"
+                             placeholder="e.g. 32x32, 4 or 26"
+                             class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-[#143628] outline-none text-sm" />
+                  </div>
+                  <div>
+                      <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Shoe Size</label>
+                      <input v-model="form.shoeSize"
+                             type="text"
+                             placeholder="e.g. 10.5, 7 Wide"
+                             class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-[#143628] outline-none text-sm" />
+                  </div>
+              </div>
+          </section>
 
-          <div class="space-y-3">
-            <div
-              v-for="(tip, idx) in form.suggestionsForSpouse"
-              :key="idx"
-              class="p-4 rounded-xl bg-white border border-emerald-800/20 grid grid-cols-1 sm:grid-cols-12 gap-3 items-start"
-            >
-              <div class="sm:col-span-4">
-                <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Idea for {{ spouseInfo?.name }}</label>
-                <input
-                  v-model="tip.name"
-                  type="text"
-                  placeholder="e.g. Audible Gift Card"
-                  class="w-full px-3 py-2 rounded-lg border border-stone-300 text-sm"
-                />
+          <!-- Section 2: Wishlist Items -->
+          <section class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                  <div>
+                      <h3 class="text-lg font-extrabold text-[#143628] flex items-center gap-2">
+                          <span>🎁</span> What's on Your {{ activeYear }} Wishlist?
+                      </h3>
+                      <p class="text-xs text-slate-500 mt-0.5">
+                          Add specific items, colors/sizes, and product links (Amazon, Home Depot, Etsy, etc.).
+                      </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                      <button type="button"
+                              @click="clearWishlistItems"
+                              class="px-3 py-1.5 rounded-lg border border-stone-300 hover:bg-stone-100 text-xs font-semibold text-slate-600 transition">
+                          🧹 Clear Old Items
+                      </button>
+                      <button type="button"
+                              @click="addWishlistItem"
+                              class="px-3.5 py-1.5 rounded-lg bg-[#143628] hover:bg-[#1d4d39] text-white text-xs font-bold transition">
+                          + Add Gift Idea
+                      </button>
+                  </div>
               </div>
-              <div class="sm:col-span-3">
-                <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Details / Size</label>
-                <input
-                  v-model="tip.description"
-                  type="text"
-                  placeholder="e.g. Size L, Navy"
-                  class="w-full px-3 py-2 rounded-lg border border-stone-300 text-sm"
-                />
-              </div>
-              <div class="sm:col-span-4">
-                <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Link (Optional)</label>
-                <input
-                  v-model="tip.url"
-                  type="text"
-                  placeholder="https://..."
-                  class="w-full px-3 py-2 rounded-lg border border-stone-300 text-sm"
-                />
-              </div>
-              <div class="sm:col-span-1 flex sm:justify-end sm:pt-6">
-                <button
-                  type="button"
-                  @click="form.suggestionsForSpouse.splice(idx, 1)"
-                  class="px-2.5 py-2 rounded-lg text-red-600 hover:bg-red-50 text-xs font-bold"
-                >
-                  ✕
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <!-- Bottom Save Bar -->
-        <div class="flex justify-end">
-            <button @click="saveMemberProfile"
-                    :disabled="saving"
-                    class="px-8 py-4 rounded-xl bg-red-700 hover:bg-red-800 text-white font-extrabold text-base shadow-lg transition cursor-pointer">
-                {{ saving ? 'Saving...' : '💾 Save My List' }}
-            </button>
-        </div>
+              <div v-if="form.favoriteThings.length === 0" class="text-center py-8 bg-stone-50 rounded-xl border border-dashed border-stone-300">
+                  <p class="text-sm text-slate-600 font-medium">Your wishlist is currently empty.</p>
+                  <button type="button"
+                          @click="addWishlistItem"
+                          class="mt-3 px-4 py-2 rounded-lg bg-[#143628] text-white text-xs font-bold">
+                      + Add Your First Gift Idea
+                  </button>
+              </div>
+
+              <div class="space-y-3">
+                  <div v-for="(item, idx) in form.favoriteThings"
+                       :key="idx"
+                       class="p-4 rounded-xl bg-stone-50/80 border border-stone-200 grid grid-cols-1 sm:grid-cols-12 gap-3 items-start">
+                      <div class="sm:col-span-4">
+                          <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Item Name</label>
+                          <input v-model="item.name"
+                                 type="text"
+                                 placeholder="e.g. Flamingo Estate Candle"
+                                 class="w-full px-3 py-2 rounded-lg border border-stone-300 bg-white text-sm" />
+                      </div>
+                      <div class="sm:col-span-3">
+                          <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Color / Size / Notes</label>
+                          <input v-model="item.description"
+                                 type="text"
+                                 placeholder="e.g. Size M, Black"
+                                 class="w-full px-3 py-2 rounded-lg border border-stone-300 bg-white text-sm" />
+                      </div>
+                      <div class="sm:col-span-4">
+                          <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Product Link (URL)</label>
+                          <input v-model="item.url"
+                                 type="text"
+                                 placeholder="https://..."
+                                 class="w-full px-3 py-2 rounded-lg border border-stone-300 bg-white text-sm" />
+                      </div>
+                      <div class="sm:col-span-1 flex sm:justify-end sm:pt-6">
+                          <button type="button"
+                                  @click="form.favoriteThings.splice(idx, 1)"
+                                  class="px-2.5 py-2 rounded-lg text-red-600 hover:bg-red-50 text-xs font-bold"
+                                  title="Remove item">
+                              ✕
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Section 3: Do Not Buy -->
+          <section class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
+              <div class="flex items-center justify-between mb-3">
+                  <div>
+                      <h3 class="text-lg font-extrabold text-red-800 flex items-center gap-2">
+                          <span>🚫</span> Please Do Not Buy Me
+                      </h3>
+                      <p class="text-xs text-slate-500">
+                          Anything you already have too much of (e.g., Booze, Drinkware, Clothing, Candles).
+                      </p>
+                  </div>
+                  <button type="button"
+                          @click="form.doNotBuy.push('')"
+                          class="px-3 py-1.5 rounded-lg bg-red-50 hover:bg-red-100 text-red-800 text-xs font-bold transition">
+                      + Add Item
+                  </button>
+              </div>
+
+              <div v-if="form.doNotBuy.length === 0" class="text-xs text-slate-400 italic">
+                  No "Do Not Buy" restrictions added.
+              </div>
+
+              <div class="flex flex-wrap gap-2 mt-2">
+                  <div v-for="(dnb, idx) in form.doNotBuy"
+                       :key="idx"
+                       class="flex items-center gap-1 bg-red-50/70 border border-red-200 rounded-xl px-3 py-1.5">
+                      <input v-model="form.doNotBuy[idx]"
+                             type="text"
+                             placeholder="e.g. Drinkware"
+                             class="bg-transparent text-sm font-medium text-red-950 outline-none w-36" />
+                      <button type="button"
+                              @click="form.doNotBuy.splice(idx, 1)"
+                              class="text-red-500 hover:text-red-800 font-bold text-xs ml-1">
+                          ✕
+                      </button>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Section 4: Spouse Insider Suggestions -->
+          <section class="bg-emerald-950/5 rounded-2xl p-6 shadow-sm border-2 border-emerald-800/20">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                  <div>
+                      <h3 class="text-lg font-extrabold text-[#143628] flex items-center gap-2">
+                          <span>🕵️</span> Secret Insider Hints for {{ spouseInfo?.name || 'Your Spouse' }}'s Santa
+                      </h3>
+                      <p class="text-xs text-slate-600 mt-0.5">
+                          Anything you enter here will automatically be sent to <strong>whoever draws {{ spouseInfo?.name || 'your spouse' }}</strong> (and {{ spouseInfo?.name || 'your spouse' }} won't see it!).
+                      </p>
+                  </div>
+                  <button type="button"
+                          @click="form.suggestionsForSpouse.push({ name: '', description: '', url: '' })"
+                          class="px-3.5 py-1.5 rounded-lg bg-[#143628] hover:bg-[#1d4d39] text-white text-xs font-bold transition shrink-0">
+                      + Add Hint for {{ spouseInfo?.name || 'Spouse' }}
+                  </button>
+              </div>
+
+              <div v-if="form.suggestionsForSpouse.length === 0" class="text-xs text-slate-500 italic">
+                  No secret hints entered for {{ spouseInfo?.name || 'your spouse' }} yet.
+              </div>
+
+              <div class="space-y-3">
+                  <div v-for="(tip, idx) in form.suggestionsForSpouse"
+                       :key="idx"
+                       class="p-4 rounded-xl bg-white border border-emerald-800/20 grid grid-cols-1 sm:grid-cols-12 gap-3 items-start">
+                      <div class="sm:col-span-4">
+                          <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Idea for {{ spouseInfo?.name }}</label>
+                          <input v-model="tip.name"
+                                 type="text"
+                                 placeholder="e.g. Audible Gift Card"
+                                 class="w-full px-3 py-2 rounded-lg border border-stone-300 text-sm" />
+                      </div>
+                      <div class="sm:col-span-3">
+                          <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Details / Size</label>
+                          <input v-model="tip.description"
+                                 type="text"
+                                 placeholder="e.g. Size L, Navy"
+                                 class="w-full px-3 py-2 rounded-lg border border-stone-300 text-sm" />
+                      </div>
+                      <div class="sm:col-span-4">
+                          <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Link (Optional)</label>
+                          <input v-model="tip.url"
+                                 type="text"
+                                 placeholder="https://..."
+                                 class="w-full px-3 py-2 rounded-lg border border-stone-300 text-sm" />
+                      </div>
+                      <div class="sm:col-span-1 flex sm:justify-end sm:pt-6">
+                          <button type="button"
+                                  @click="form.suggestionsForSpouse.splice(idx, 1)"
+                                  class="px-2.5 py-2 rounded-lg text-red-600 hover:bg-red-50 text-xs font-bold">
+                              ✕
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Bottom Save Bar -->
+          <div class="flex justify-end">
+              <button @click="saveMemberProfile"
+                      :disabled="saving"
+                      class="px-8 py-4 rounded-xl bg-red-700 hover:bg-red-800 text-white font-extrabold text-base shadow-lg transition cursor-pointer">
+                  {{ saving ? 'Saving...' : '💾 Save My List' }}
+              </button>
+          </div>
       </div>
 
       <!-- VIEW 3: ADMIN PORTAL (me@mikeslevine.com ONLY) -->
@@ -766,8 +754,10 @@ const editingMember = ref(null);
 const emailPreviewHtml = ref('');
 
 const toast = reactive({ message: '', type: 'success' });
+const addressMissingError = ref(false);
 
 const form = reactive({
+  shippingAddress: '',
   pantSize: '',
   shirtSize: '',
   shoeSize: '',
@@ -811,6 +801,8 @@ function showToast(message, type = 'success') {
 }
 
 function populateFormFromMember(member) {
+  addressMissingError.value = false;
+  form.shippingAddress = member.shippingAddress || '';
   form.pantSize = member.pantSize || '';
   form.shirtSize = member.shirtSize || '';
   form.shoeSize = member.shoeSize || '';
@@ -880,6 +872,12 @@ function clearWishlistItems() {
 
 async function saveMemberProfile() {
   if (!currentUser.value) return;
+  if (!form.shippingAddress || !form.shippingAddress.trim()) {
+    addressMissingError.value = true;
+    showToast('Please enter your shipping address / delivery instructions first!', 'error');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
   saving.value = true;
   try {
     const res = await fetch('/api/save', {
@@ -887,6 +885,7 @@ async function saveMemberProfile() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         id: currentUser.value.id,
+        shippingAddress: form.shippingAddress,
         pantSize: form.pantSize,
         shirtSize: form.shirtSize,
         shoeSize: form.shoeSize,

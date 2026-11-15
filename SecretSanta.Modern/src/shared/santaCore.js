@@ -137,7 +137,9 @@ export function buildFestiveEmailHtml({ giver, receiver, allMembers, year, isTes
 
   const wishlist = normalizeGiftItems(receiver.favoriteThings || []);
   const doNotBuy = (receiver.doNotBuy || []).filter((x) => x && String(x).trim());
-
+  const shippingHtml = receiver.shippingAddress && receiver.shippingAddress.trim()
+        ? escapeHtml(receiver.shippingAddress.trim()).replace(/\r?\n/g, '<br/>')
+        : '<span style="color:#9ca3af;font-style:italic;">No shipping address entered yet — check with Mike!</span>';
   const testBanner = isTest
     ? `<div style="background-color:#fef3c7;border:2px dashed #d97706;color:#92400e;padding:12px 16px;border-radius:8px;margin-bottom:20px;font-size:14px;text-align:center;">
          <strong>TEST MODE PREVIEW</strong> — Intended for <strong>${escapeHtml(giver.name)}</strong> (${escapeHtml(giver.email)})
@@ -234,6 +236,16 @@ export function buildFestiveEmailHtml({ giver, receiver, allMembers, year, isTes
               <div style="background-color:#fdf8f6;border:2px solid #b91c1c;border-radius:12px;padding:20px;text-align:center;margin:20px 0;">
                 <div style="font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:#b91c1c;font-weight:700;">Your ${year} Gift Recipient</div>
                 <div style="font-size:32px;font-weight:900;color:#143628;margin-top:6px;">🎅 ${escapeHtml(receiver.name)}</div>
+              </div>
+
+              <!-- Shipping Address / Delivery Instructions -->
+              <div style="margin-top:20px;background-color:#f8fafc;border:1px solid #cbd5e1;border-left:4px solid #143628;border-radius:8px;padding:14px 16px;">
+                <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#143628;margin-bottom:6px;">
+                  📦 Where to Ship (${escapeHtml(receiver.name)}'s Address &amp; Delivery Notes)
+                </div>
+                <div style="font-size:14px;color:#1e293b;line-height:1.5;font-weight:500;">
+                  ${shippingHtml}
+                </div>
               </div>
 
               <!-- Sizes Row -->

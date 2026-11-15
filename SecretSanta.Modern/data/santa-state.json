@@ -20,13 +20,14 @@
       "pantSize": "32x32",
       "shirtSize": "Small",
       "shoeSize": "10.5",
-      "updatedYear": null,
+      "updatedYear": 2026,
       "favoriteThings": [],
       "doNotBuy": [
         "Booze",
         "Drinkware"
       ],
-      "suggestionsForSpouse": []
+      "suggestionsForSpouse": [],
+      "shippingAddress": "29 John St Cranford NJ"
     },
     {
       "id": 2,

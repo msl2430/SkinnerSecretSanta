@@ -67,8 +67,17 @@ export async function handleApiRequest({ method, path, body, getState, saveState
     }
 
     const existing = state.members[idx];
+    const shippingAddress = (body.shippingAddress ?? existing.shippingAddress ?? '').trim();
+
+    if (!shippingAddress) {
+        return {
+            status: 400,
+            data: { error: 'Please enter your shipping address / delivery instructions before saving.' }
+        };
+    }
     const updatedMember = {
       ...existing,
+      shippingAddress,
       pantSize: (body.pantSize ?? existing.pantSize ?? '').trim(),
       shirtSize: (body.shirtSize ?? existing.shirtSize ?? '').trim(),
       shoeSize: (body.shoeSize ?? existing.shoeSize ?? '').trim(),
@@ -115,6 +124,7 @@ export async function handleApiRequest({ method, path, body, getState, saveState
       ...existing,
       name: (body.name ?? existing.name).trim(),
       email: (body.email ?? existing.email).trim(),
+      shippingAddress: (body.shippingAddress ?? existing.shippingAddress ?? '').trim(),
       pantSize: (body.pantSize ?? existing.pantSize ?? '').trim(),
       shirtSize: (body.shirtSize ?? existing.shirtSize ?? '').trim(),
       shoeSize: (body.shoeSize ?? existing.shoeSize ?? '').trim(),
