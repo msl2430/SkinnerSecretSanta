@@ -213,6 +213,9 @@ export async function handleApiRequest({ method, path, body, getState, saveState
             error: emailErr.message
           });
         }
+
+          // Stay under Resend's 2 req/sec free-tier rate limit
+          await new Promise((resolve) => setTimeout(resolve, 600));
       }
     }
 
@@ -245,6 +248,9 @@ export async function handleApiRequest({ method, path, body, getState, saveState
           member.ineligible = [
             ...new Set([member.spouseId, prevMostRecent, match.receiverId].filter(Boolean))
           ];
+            member.favoriteThings = [];
+            member.suggestionsForSpouse = [];
+            member.updatedYear = null;
         }
       }
 
@@ -263,6 +269,19 @@ export async function handleApiRequest({ method, path, body, getState, saveState
         state
       }
     };
+  }
+
+  // POST /api/admin/import-state (Restores full state from a downloaded JSON backup)
+  if (method === 'POST' && path === '/api/admin/import-state') {
+        const incoming = body?.state;
+        if (!incoming || !Array.isArray(incoming.members) || incoming.members.length === 0) {
+            return {
+                status: 400,
+                data: { error: 'Invalid backup file: missing members array.' }
+            };
+        }
+        await saveState(incoming);
+        return { status: 200, data: { ok: true, state: incoming } };
   }
 
   // POST /api/admin/reset-seed (Resets state back to clean 2026 seed if needed after testing)

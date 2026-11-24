@@ -493,13 +493,28 @@
                 Automatically blocks Self + Spouse + Last 2 Years. Click "Edit / Inspect" on anyone to tweak their email, exclusions, or wishlist.
               </p>
             </div>
-            <button
-              @click="resetTo2026Seed"
-              class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-semibold text-emerald-100 border border-white/15 transition"
-              title="Reset local database back to initial 2026 seed state"
-            >
-              ↺ Reset to 2026 Seed
-            </button>
+            <div class="flex flex-wrap items-center gap-2">
+                <button @click="downloadJsonBackup"
+                        class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-sm transition cursor-pointer"
+                        title="Download full live database as a JSON file">
+                    ⬇️ Download JSON Backup
+                </button>
+                <button @click="$refs.restoreFileInput.click()"
+                        class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-semibold text-white border border-white/15 transition cursor-pointer"
+                        title="Restore database from a previously downloaded JSON backup">
+                    ⬆️ Restore JSON
+                </button>
+                <input ref="restoreFileInput"
+                       type="file"
+                       accept=".json,application/json"
+                       class="hidden"
+                       @change="handleRestoreJson" />
+                <button @click="resetTo2026Seed"
+                        class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-semibold text-emerald-100 border border-white/15 transition cursor-pointer"
+                        title="Reset database back to initial 2026 seed state">
+                    ↺ Reset to 2026 Seed
+                </button>
+            </div>
           </div>
 
           <div class="overflow-x-auto">
@@ -1024,6 +1039,69 @@ async function resetTo2026Seed() {
     showToast('Database reset to clean 2026 seed state!');
   }
 }
+
+    async function downloadJsonBackup() {
+        try {
+            // Pull fresh state directly from KV/disk so the download includes the latest family saves
+            const res = await fetch('/api/state');
+            const latestState = res.ok ? await res.json() : adminState.value;
+            if (res.ok) {
+                adminState.value = latestState;
+            }
+
+            const jsonStr = JSON.stringify(latestState, null, 2);
+            const blob = new Blob([jsonStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const dateStamp = new Date().toISOString().slice(0, 10);
+
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `skinner-secret-santa-backup-${dateStamp}.json`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+
+            showToast('Downloaded live JSON backup!');
+        } catch (err) {
+            showToast('Failed to export JSON backup.', 'error');
+        }
+    }
+
+    async function handleRestoreJson(event) {
+        const file = event.target.files?.[0];
+        event.target.value = '';
+        if (!file) return;
+
+        try {
+            const text = await file.text();
+            const parsed = JSON.parse(text);
+
+            if (!parsed || !Array.isArray(parsed.members) || parsed.members.length === 0) {
+                showToast('Invalid backup file: missing members list.', 'error');
+                return;
+            }
+
+            const ok = window.confirm(
+                `Restore database from "${file.name}"?\n\nThis will overwrite the current live data with the ${parsed.members.length} members in this backup file.`
+            );
+            if (!ok) return;
+
+            const res = await fetch('/api/admin/import-state', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ state: parsed })
+            });
+            const data = await res.json();
+            if (!res.ok) throw new Error(data.error || 'Restore failed');
+
+            adminState.value = data.state;
+            activeYear.value = data.state.activeYear;
+            showToast('Database restored from JSON backup!');
+        } catch (err) {
+            showToast(err.message || 'Could not parse JSON backup file.', 'error');
+        }
+    }
 
 onMounted(async () => {
   const savedEmail = localStorage.getItem('skinner_santa_email');
